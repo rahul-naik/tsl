@@ -24,6 +24,7 @@ input[type=text]:focus:not([readonly]),input[type=password]:focus:not([readonly]
     border-bottom: 1px solid #42a5f5;
     box-shadow: 0 1px 0 0 #42a5f5;
 }
-#login-page{
-    background-color:  #fff;    
+
+.signin,.signin:hover,.signin:focus,.signin:active{
+    background-color: #2979ff;
 }
