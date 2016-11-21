@@ -1,0 +1,29 @@
+body{
+    min-height: 100%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5f5f5+0,f5f5f5+52,5292fd+52,5292fd+100 */
+    background: #f5f5f5; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f5f5f5 0%, #f5f5f5 52%, #5292fd 52%, #5292fd 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #f5f5f5 0%,#f5f5f5 52%,#5292fd 52%,#5292fd 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #f5f5f5 0%,#f5f5f5 52%,#5292fd 52%,#5292fd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#5292fd',GradientType=0 ); /* IE6-9 */
+    display: table-cell;
+    vertical-align: middle;
+}
+html{
+   display: table;
+    margin: auto;
+    height:100%;
+}
+.login-form{
+    width: 340px;
+}
+input[type=text],input[type=password]{
+    border-bottom:1px solid #42a5f5;
+}
+input[type=text]:focus:not([readonly]),input[type=password]:focus:not([readonly]){
+    border-bottom: 1px solid #42a5f5;
+    box-shadow: 0 1px 0 0 #42a5f5;
+}
+#login-page{
+    background-color:  #fff;    
+}
