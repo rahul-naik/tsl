@@ -28,3 +28,27 @@ input[type=text]:focus:not([readonly]),input[type=password]:focus:not([readonly]
 .signin,.signin:hover,.signin:focus,.signin:active{
     background-color: #2979ff;
 }
+
+input[type=text]:focus:not([readonly])+label,input[type=password]:focus:not([readonly])+label,input[type=email]:focus:not([readonly])+label{
+    color:#9e9e9e;
+}
+
+.login-form-text{
+    color: #5395FE;
+    font-weight: 600;
+    font-size: 18px;
+}
+.signinwrapper{
+    border-left: 4px solid #64DC18;
+    padding-left:20px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.md-subheader{
+    font-size: 12px;
+    color:#9BADB5;
+}
+.logoholder{
+    color:#5392FB;
+    font-weight: 600;
+}
