@@ -10,8 +10,8 @@ $(document).ready(function () {
         itemsMobile: false, // itemsMobile disabled - inherit from itemsTablet option
         navigation: true,
         navigationText: [
-            "<i class='material-icons'>fast_rewind</i>",
-            "<i class='material-icons'>fast_forward</i>"
+            "<img src='images/leftArrow.png' >",
+            "<img src='images/rightArrow.png' >"
         ],
     });
 

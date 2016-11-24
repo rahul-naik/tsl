@@ -14,10 +14,17 @@
 small {
     font-size: 0.8rem;
 }
+.user-data{
+    padding-left:12px;
+}
 .user-data span{
     display: block;
     color:#FFF;
     line-height:20px;
+}
+.admin-holder{
+        height: 100%;
+    padding-top: 10px;
 }
 span.user-name{
 
@@ -60,7 +67,7 @@ span.user-role{
     position: absolute;
     z-index: 5;
     top: 12px;
-    left: 34px;
+    left: 48px;
 }
 .badge, .bs-badge {
     font-size: 11px;
@@ -88,6 +95,9 @@ span.user-role{
 .section-header{
     margin: 0;
     padding: 9px 0;
+        border-bottom: 1px solid #cfcfcf;
+    height: 48px;
+    background: #FFF;
 }
 .overflow-container{
     overflow: hidden;
@@ -121,7 +131,7 @@ span.user-role{
 
 }
 div.shift-container{
-    margin-left:95px;
+    margin-left:80px;
 }
 
 #owl-demo .item{
@@ -151,18 +161,18 @@ div.shift-container{
   background-color: rgba(0,0,0,0.05);
 }
 #left-sidebar-nav{
-    padding-right:0.75em;
+
         position:static;
 }
 #left-sidebar-nav + div{
-    padding:0 0.75em;
+        padding: 0 0.8em;
     width:75%;
     flex: 1 auto
 }
 
 #left-sidebar-nav.sidebar-collapsed{
     position: absolute;
-    width: 96px;
+    width: 80px;
     height:100%;
 }
 #left-sidebar-nav{
@@ -222,4 +232,78 @@ footer.page-footer{
 
 #left-sidebar-nav.sidebar-collapsed.display-over{
     width:230px;
+}
+img.responsive-img{
+    vertical-align: middle;
+}
+.header-icon{
+    border-right:1px solid #64b5f6;
+}
+.userDetails{
+    height:64px;
+}
+
+.dashboard a{
+        background: url(../images/Dashboard_Normal.png) no-repeat 32px center;
+        padding-left:81px;
+}
+.dashboard:hover a{
+     background:#2979ff url(../images/Dashboard_Clicked.png) no-repeat 32px center;
+}
+.study a{
+        background: url(../images/StudyUsers_Normal.png) no-repeat 32px center;
+        padding-left:81px;
+        line-height: 25px;
+}
+.study:hover a{
+     background:#2979ff url(../images/StudyUsers_Clicked.png) no-repeat 32px center;
+}
+.manage-study a{
+        background: url(../images/ManageStudy_Normal.png) no-repeat 32px center;
+        padding-left:81px;
+}
+.manage-study:hover a{
+     background:#2979ff url(../images/ManageStudy_Clicked.png) no-repeat 32px center;
+}
+.library a{
+        background: url(../images/Library_Normal.png) no-repeat 32px center;
+        padding-left:81px;
+}
+.library:hover a{
+     background:#2979ff url(../images/Library_Clicked.png) no-repeat 32px center;
+}
+.query a{
+        background: url(../images/Querylist_Normal.png) no-repeat 32px center;
+        padding-left:81px;
+}
+.query:hover a{
+     background:#2979ff url(../images/Querylist_Clicked.png) no-repeat 32px center;
+}
+.reports a{
+        background: url(../images/Reports_Normal.png) no-repeat 32px center;
+        padding-left:81px;
+}
+.reports:hover a{
+     background:#2979ff url(../images/Reports_Clicked.png) no-repeat 32px center;
+}
+
+.dummyDiv{
+    height:48px;
+    width:100%;
+    background:#FFF;
+    position:absolute;
+    border-bottom:1px solid #cfcfcf;  
+}
+#collapseSideBar{
+        display: block;
+    margin: 0 auto;
+    float: right;
+    margin-top: 15px;
+    width: 20px;
+}
+.head-nav{
+    width:80px;
+}
+.downarrow{
+    padding-left:10px;
 }

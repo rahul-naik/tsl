@@ -18,24 +18,29 @@
 <body>
   <div class="navbar-fixed">
     <nav class=" lighten-custom" role="navigation">
-      <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">CRF Web</a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="#" class=" waves-effect waves-block waves-light"><i class="material-icons">email</i>
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo valign-wrapper"><img class="responsive-img" src="images/Logo.png" /></a>
+        <ul class="right hide-on-med-and-down ">
+          <li class="head-nav"><a href="#" class="center-align header-icon waves-effect waves-block waves-light"><i class="material-icons">email</i>
           <span class="bs-badge badge-absolute bg-red">2</span>
           </a></li>
-          <li><a href="#" class=" waves-effect waves-block waves-light"><i class="material-icons">help</i></a></li>
+          <li class="head-nav">
+            <a href="#" class="center-align header-icon waves-effect waves-block waves-light"><img class="responsive-img" src="images/Help_Icon.png"></a>
+          </li>
 
           <li class="userDetails valign-wrapper">
-            <a href="#" class="left"><i class="Medium material-icons ">language</i></a>
-            <div class="right user-data">
-              <span class="user-name">Shibu - Tesla </span>
-              <span class="user-role">Administrator</span>
-            </div>
+            <a href="#" class="left waves-effect waves-block waves-light admin-holder">
+              <img class="responsive-img left" src="images/User_Icon.png">
+              <div class="right user-data">
+                <span class="user-name">Shibu - Tesla </span>
+                <span class="user-role">Administrator</span>
+              </div>
+            </a>
           </li>
         </ul>
 
         <ul id="nav-mobile" class="side-nav">
-          <li><a href=""><i class="material-icons">email</i></a></li>
+          <li><a href="" class=""><i class="material-icons">email</i></a></li>
           <li><a href=""><i class="material-icons">help</i></a></li>
 
           <li><a href=""><i class="material-icons">more_vert</i></a></li>
@@ -44,33 +49,35 @@
       </div>
     </nav>
   </div>
+  <div class="dummyDiv">
 
+  </div>
   <div class="container overflow-container flex-container">
     <!-- START LEFT SIDEBAR NAV-->
     <div id="left-sidebar-nav" class="left">
-      
+
       <ul id="slide-out " class="side-bar side-nav leftside-navigation">
 
         <li class="bold active" id="colapseOnHover">
-          <a href="#" class="waves-effect waves-cyan"><i class="material-icons right collapse-icon"  id="collapseSideBar">settings_ethernet</i></a>
+          <a href="#" class="waves-effect valign-wrapper waves-cyan right-align"><img id="collapseSideBar" class="responsive-img" src="images/CollapseArrow.png" /></a>
         </li>
-        <li class="bold active">
-          <a href="#" class="waves-effect waves-cyan"><img class="icon-class" src="http://placehold.it/24x24" /> Dashboard</a>
+        <li class="bold active dashboard">
+          <a href="#" class="waves-effect waves-cyan "> Dashboard</a>
         </li>
-        <li class="bold active">
-          <a href="#" class="waves-effect waves-cyan"><img class="icon-class" src="http://placehold.it/24x24" /> Dashboard</a>
+        <li class="bold active study">
+          <a href="#" class="waves-effect waves-cyan "> Study Users & Preferences</a>
         </li>
-        <li class="bold active">
-          <a href="#" class="waves-effect waves-cyan"><img class="icon-class" src="http://placehold.it/24x24" /> Dashboard</a>
+        <li class="bold active manage-study">
+          <a href="#" class="waves-effect waves-cyan "> Manage Studies</a>
         </li>
-        <li class="bold active">
-          <a href="#" class="waves-effect waves-cyan"><img class="icon-class" src="http://placehold.it/24x24" /> Dashboard</a>
+        <li class="bold active library">
+          <a href="#" class="waves-effect waves-cyan "> Library</a>
         </li>
-        <li class="bold active">
-          <a href="#" class="waves-effect waves-cyan"><img class="icon-class" src="http://placehold.it/24x24" /> Dashboard</a>
+        <li class="bold active query">
+          <a href="#" class="waves-effect waves-cyan "> Query List</a>
         </li>
-        <li class="bold active">
-          <a href="#" class="waves-effect waves-cyan"><img class="icon-class" src="http://placehold.it/24x24" /> Dashboard</a>
+        <li class="bold active reports">
+          <a href="#" class="waves-effect waves-cyan "> Reports</a>
         </li>
       </ul>
       <a href="#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only cyan"><i class="mdi-navigation-menu"></i></a>
@@ -84,7 +91,9 @@
         </div>
         <div class="col m9">
 
-          <div class="right"> <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a></div>
+          <div class="right">
+            <a href="#" class="button-collapse"><img src="images/Hamburger_Icon.png" class="responsive-img" /></a>
+          </div>
         </div>
       </div>
       <!--   Icon Section   -->
@@ -114,9 +123,9 @@
 
             </div>
             <div class="card">
-              <div class="card-image visit">
+              <div class="card-image publish">
 
-                <span class="card-title">Visit Submit For Sign Off</span>
+                <span class="card-title">Study Published</span>
               </div>
               <div class="card-content">
                 <p>Thursday, 10 Nov 2016</p>
@@ -130,6 +139,19 @@
               <div class="card-image visit">
 
                 <span class="card-title">Visit Submit For Sign Off</span>
+              </div>
+              <div class="card-content">
+                <p>Thursday, 10 Nov 2016</p>
+                <span class="card-text">Lorem Ipsum Lorem</span>
+                <span class="">Lorem Ipsum Lorem</span>
+                <span class="">Lorem Ipsum Lorem</span>
+              </div>
+
+            </div>
+            <div class="card">
+              <div class="card-image publish">
+
+                <span class="card-title">Study Published</span>
               </div>
               <div class="card-content">
                 <p>Thursday, 10 Nov 2016</p>
@@ -192,19 +214,22 @@
                   <td>test 1.6</td>
                   <td>test study 1.6</td>
                   <td style="color:#dd5b33">Draft</td>
-                  <td><i class="material-icons">settings</i></td>
+                  <td><img src="images/Setting_Icon.png" class="responsive-img" /><img src="images/downiconblack.png" class="responsive-img downarrow"
+                    /></td>
                 </tr>
                 <tr>
                   <td>test 1.6</td>
                   <td>test study 1.6</td>
                   <td style="color:#21cf69">Published</td>
-                  <td><i class="material-icons">settings</i></td>
+                  <td><img src="images/Setting_Icon.png" class="responsive-img" /><img src="images/downiconblack.png" class="responsive-img downarrow"
+                    /></td>
                 </tr>
                 <tr>
                   <td>test 1.6</td>
                   <td>test study 1.6</td>
                   <td style="color:#dd5b33">Draft</td>
-                  <td><i class="material-icons">settings</i></td>
+                  <td><img src="images/Setting_Icon.png" class="responsive-img" /><img src="images/downiconblack.png" class="responsive-img downarrow"
+                    /></td>
                 </tr>
               </tbody>
             </table>
