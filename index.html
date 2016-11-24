@@ -45,13 +45,14 @@
     </nav>
   </div>
 
-  <div class="container">
+  <div class="container overflow-container flex-container">
     <!-- START LEFT SIDEBAR NAV-->
-    <div id="left-sidebar-nav" class="left col m3">
+    <div id="left-sidebar-nav" class="left">
+      
       <ul id="slide-out " class="side-bar side-nav leftside-navigation">
 
         <li class="bold active" id="colapseOnHover">
-          <a href="#" class="waves-effect waves-cyan"><i class="material-icons"  id="collapseSideBar">settings_ethernet</i></a>
+          <a href="#" class="waves-effect waves-cyan"><i class="material-icons right collapse-icon"  id="collapseSideBar">settings_ethernet</i></a>
         </li>
         <li class="bold active">
           <a href="#" class="waves-effect waves-cyan"><img class="icon-class" src="http://placehold.it/24x24" /> Dashboard</a>
@@ -76,7 +77,7 @@
     </div>
 
 
-    <div class="main-container col m9">
+    <div class="main-container">
       <div class="row section-header">
         <div class="col m3">
           <div class="left dashboard-text">Dashboard</div>
@@ -97,140 +98,70 @@
         </div>
       </div>
       <div class="row">
-        <div class="col s12 m4">
-          <div class="card">
-            <div class="card-image study">
+        <div class="carousel-wrapper">
+          <div id="owl-demo" class="owl-carousel owl-theme">
+            <div class="card">
+              <div class="card-image visit">
 
-              <span class="card-title">Create Study</span>
-            </div>
-            <div class="card-content">
-              <p>Thursday, 10 Nov 2016</p>
-              <span class="card-text">Lorem Ipsum Lorem</span>
-              <span class="">Lorem Ipsum Lorem</span>
-              <span class="">Lorem Ipsum Lorem</span>
-            </div>
+                <span class="card-title">Visit Submit For Sign Off</span>
+              </div>
+              <div class="card-content">
+                <p>Thursday, 10 Nov 2016</p>
+                <span class="card-text">Lorem Ipsum Lorem</span>
+                <span class="">Lorem Ipsum Lorem</span>
+                <span class="">Lorem Ipsum Lorem</span>
+              </div>
 
+            </div>
+            <div class="card">
+              <div class="card-image visit">
+
+                <span class="card-title">Visit Submit For Sign Off</span>
+              </div>
+              <div class="card-content">
+                <p>Thursday, 10 Nov 2016</p>
+                <span class="card-text">Lorem Ipsum Lorem</span>
+                <span class="">Lorem Ipsum Lorem</span>
+                <span class="">Lorem Ipsum Lorem</span>
+              </div>
+
+            </div>
+            <div class="card">
+              <div class="card-image visit">
+
+                <span class="card-title">Visit Submit For Sign Off</span>
+              </div>
+              <div class="card-content">
+                <p>Thursday, 10 Nov 2016</p>
+                <span class="card-text">Lorem Ipsum Lorem</span>
+                <span class="">Lorem Ipsum Lorem</span>
+                <span class="">Lorem Ipsum Lorem</span>
+              </div>
+
+            </div>
+            <div class="card">
+              <div class="card-image visit">
+
+                <span class="card-title">Visit Submit For Sign Off</span>
+              </div>
+              <div class="card-content">
+                <p>Thursday, 10 Nov 2016</p>
+                <span class="card-text">Lorem Ipsum Lorem</span>
+                <span class="">Lorem Ipsum Lorem</span>
+                <span class="">Lorem Ipsum Lorem</span>
+              </div>
+
+            </div>
           </div>
         </div>
-        <div class="col s12 m4">
-          <div class="card">
-            <div class="card-image visit">
 
-              <span class="card-title">Visit Submit For Sign Off</span>
-            </div>
-            <div class="card-content">
-              <p>Thursday, 10 Nov 2016</p>
-              <span class="card-text">Lorem Ipsum Lorem</span>
-              <span class="">Lorem Ipsum Lorem</span>
-              <span class="">Lorem Ipsum Lorem</span>
-            </div>
-
+        <div class="owl-controls clickable">
+          <div class="owl-pagination">
+            <div class="owl-page"><span class=""></span></div>
+            <div class="owl-page active"><span class=""></span></div>
           </div>
+
         </div>
-        <div class="col s12 m4">
-          <div class="card">
-            <div class="card-image publish">
-
-              <span class="card-title">Study Published</span>
-            </div>
-            <div class="card-content">
-              <p>Thursday, 10 Nov 2016</p>
-              <span class="card-text">Lorem Ipsum Lorem</span>
-              <span class="">Lorem Ipsum Lorem</span>
-              <span class="">Lorem Ipsum Lorem</span>
-            </div>
-
-          </div>
-        </div>
-        <!--<div id="owl-demo" class="owl-carousel owl-theme">
-           <div class="card">
-              <div class="card-image">
-                <img src="images/sample-1.jpg">
-                <span class="card-title">Card Title</span>
-              </div>
-              <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require
-                  little markup to use effectively.</p>
-              </div>
-              <div class="card-action">
-                <a href="#">This is a link</a>
-              </div>
-            </div>
-             <div class="card">
-              <div class="card-image">
-                <img src="images/sample-1.jpg">
-                <span class="card-title">Card Title</span>
-              </div>
-              <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require
-                  little markup to use effectively.</p>
-              </div>
-              <div class="card-action">
-                <a href="#">This is a link</a>
-              </div>
-            </div>
-             <div class="card">
-              <div class="card-image">
-                <img src="images/sample-1.jpg">
-                <span class="card-title">Card Title</span>
-              </div>
-              <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require
-                  little markup to use effectively.</p>
-              </div>
-              <div class="card-action">
-                <a href="#">This is a link</a>
-              </div>
-            </div>
-             <div class="card">
-              <div class="card-image">
-                <img src="images/sample-1.jpg">
-                <span class="card-title">Card Title</span>
-              </div>
-              <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require
-                  little markup to use effectively.</p>
-              </div>
-              <div class="card-action">
-                <a href="#">This is a link</a>
-              </div>
-            </div>
-             <div class="card">
-              <div class="card-image">
-                <img src="images/sample-1.jpg">
-                <span class="card-title">Card Title</span>
-              </div>
-              <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require
-                  little markup to use effectively.</p>
-              </div>
-              <div class="card-action">
-                <a href="#">This is a link</a>
-              </div>
-            </div>
-             <div class="card">
-              <div class="card-image">
-                <img src="images/sample-1.jpg">
-                <span class="card-title">Card Title</span>
-              </div>
-              <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require
-                  little markup to use effectively.</p>
-              </div>
-              <div class="card-action">
-                <a href="#">This is a link</a>
-              </div>
-            </div>
-
-
-        </div>-->
-
-        <!--<div class="customNavigation">
-          <a class="btn prev">Previous</a>
-          <a class="btn next">Next</a>
-          <a class="btn play">Autoplay</a>
-          <a class="btn stop">Stop</a>
-        </div>-->
 
       </div>
 
@@ -291,8 +222,8 @@
   <footer class="page-footer" style="margin:0;padding:0;">
     <div class="footer-copyright">
       <div class="container">
-       © 2016 Clindox. Build Version 1.6
-        
+        2016 Clindox. Build Version 1.6
+
       </div>
     </div>
   </footer>
