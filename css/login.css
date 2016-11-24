@@ -52,3 +52,6 @@ input[type=text]:focus:not([readonly])+label,input[type=password]:focus:not([rea
     color:#5392FB;
     font-weight: 600;
 }
+.login-form .row{
+    margin-bottom:0;
+}
