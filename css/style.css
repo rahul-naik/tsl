@@ -131,7 +131,7 @@ span.user-role{
 
 }
 div.shift-container{
-    margin-left:80px;
+    margin-left:60px;
 }
 
 #owl-demo .item{
@@ -172,13 +172,13 @@ div.shift-container{
 
 #left-sidebar-nav.sidebar-collapsed{
     position: absolute;
-    width: 80px;
+    width: 60px;
     height:100%;
 }
 #left-sidebar-nav{
 -webkit-transition: all .3s cubic-bezier(.55,0,.55,.2),width .1s linear,min-width .1s linear,max-width .1s linear;
     transition: all .3s cubic-bezier(.55,0,.55,.2),width .1s linear,min-width .1s linear,max-width .1s linear;
-  width: 230px;
+  width: 210px;
   background: #f5f5f5;
 }
 
@@ -231,7 +231,7 @@ footer.page-footer{
 }
 
 #left-sidebar-nav.sidebar-collapsed.display-over{
-    width:230px;
+    width:210px;
 }
 img.responsive-img{
     vertical-align: middle;
@@ -242,49 +242,51 @@ img.responsive-img{
 .userDetails{
     height:64px;
 }
-
-.dashboard a{
-        background: url(../images/Dashboard_Normal.png) no-repeat 32px center;
-        padding-left:81px;
+#slide-out li:hover{
+    background-color: #2979ff;
 }
-.dashboard:hover a{
-     background:#2979ff url(../images/Dashboard_Clicked.png) no-repeat 32px center;
+.dashboard a{
+        background: url(../images/Dashboard_Normal.png) no-repeat 21px center;
+        padding-left:61px;
+}
+.dashboard a:hover{
+     background: url(../images/Dashboard_Clicked.png) no-repeat 21px center;
 }
 .study a{
-        background: url(../images/StudyUsers_Normal.png) no-repeat 32px center;
-        padding-left:81px;
+        background: url(../images/StudyUsers_Normal.png) no-repeat 21px center;
+        padding-left:61px;
         line-height: 25px;
 }
-.study:hover a{
-     background:#2979ff url(../images/StudyUsers_Clicked.png) no-repeat 32px center;
+.study a:hover{
+     background: url(../images/StudyUsers_Clicked.png) no-repeat 21px center;
 }
 .manage-study a{
-        background: url(../images/ManageStudy_Normal.png) no-repeat 32px center;
-        padding-left:81px;
+        background: url(../images/ManageStudy_Normal.png) no-repeat 21px center;
+        padding-left:61px;
 }
-.manage-study:hover a{
-     background:#2979ff url(../images/ManageStudy_Clicked.png) no-repeat 32px center;
+.manage-study a:hover{
+     background: url(../images/ManageStudy_Clicked.png) no-repeat 21px center;
 }
 .library a{
-        background: url(../images/Library_Normal.png) no-repeat 32px center;
-        padding-left:81px;
+        background: url(../images/Library_Normal.png) no-repeat 21px center;
+        padding-left:61px;
 }
-.library:hover a{
-     background:#2979ff url(../images/Library_Clicked.png) no-repeat 32px center;
+.library a:hover{
+     background: url(../images/Library_Clicked.png) no-repeat 21px center;
 }
 .query a{
-        background: url(../images/Querylist_Normal.png) no-repeat 32px center;
-        padding-left:81px;
+        background: url(../images/Querylist_Normal.png) no-repeat 21px center;
+        padding-left:61px;
 }
-.query:hover a{
-     background:#2979ff url(../images/Querylist_Clicked.png) no-repeat 32px center;
+.query a:hover{
+     background: url(../images/Querylist_Clicked.png) no-repeat 21px center;
 }
 .reports a{
-        background: url(../images/Reports_Normal.png) no-repeat 32px center;
-        padding-left:81px;
+        background: url(../images/Reports_Normal.png) no-repeat 21px center;
+        padding-left:61px;
 }
-.reports:hover a{
-     background:#2979ff url(../images/Reports_Clicked.png) no-repeat 32px center;
+.reports a:hover{
+     background: url(../images/Reports_Clicked.png) no-repeat 21px center;
 }
 
 .dummyDiv{
@@ -315,4 +317,11 @@ img.responsive-img{
 footer{
      margin:0 !important;
      padding:0 !important;
+}
+
+.dashboard{
+    background: url('../images/SubmenuArrow_Normal.png') no-repeat 90% center; 
+}
+.dashboard:hover{
+    background: url('../images/SubmenuArrow_Clicked.png') no-repeat 90% center; 
 }
