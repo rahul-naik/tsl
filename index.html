@@ -29,13 +29,20 @@
           </li>
 
           <li class="userDetails valign-wrapper">
-            <a href="#" class="left waves-effect waves-block waves-light admin-holder">
+            <a href="#" class="left waves-effect waves-block waves-light admin-holder dropdown-button" data-beloworigin="true" data-activates='dropdown1'>
               <img class="responsive-img left" src="images/User_Icon.png">
-              <div class="right user-data">
+              <div class="left user-data">
                 <span class="user-name">Shibu - Tesla </span>
                 <span class="user-role">Administrator</span>
               </div>
+              <img class="right responsive-img dropImage" src="images/drop.png" />
             </a>
+            <ul id='dropdown1' class='dropdown-content'>
+              <li><a href="#!">My Profile</a></li>
+              <li><a href="#!">My Data</a></li>
+              <li class="divider"></li>
+              <li><a href="#!">Logout</a></li>
+            </ul>
           </li>
         </ul>
 

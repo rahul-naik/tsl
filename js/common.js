@@ -26,14 +26,14 @@ $(function () {
         } else {
             $sidebarContainer.addClass('sidebar-collapsed');
             $('.main-container').addClass('shift-container');
-           
-                $(this).hide(function () {
-                    $hoverContainer.addClass('hoverMe');
-                });
-            
+
+            $(this).hide(function () {
+                $hoverContainer.addClass('hoverMe');
+            });
+
         }
 
-
+        $("#owl-demo").data('owlCarousel').reinit({});
 
     });
 
