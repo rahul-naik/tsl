@@ -242,53 +242,62 @@ img.responsive-img{
 .userDetails{
     height:64px;
 }
-#slide-out li:hover{
+#slide-out li a:hover{
     background-color: #2979ff;
 }
-.dashboard a{
+.side-nav .dashboard a{
         background: url(../images/Dashboard_Normal.png) no-repeat 21px center;
         padding-left:61px;
 }
-.dashboard a:hover{
+.side-nav .dashboard a:hover{
      background: url(../images/Dashboard_Clicked.png) no-repeat 21px center;
 }
-.study a{
+.side-nav .study >ul > li > a{
         background: url(../images/StudyUsers_Normal.png) no-repeat 21px center;
         padding-left:61px;
         line-height: 25px;
 }
-.study a:hover{
+ul.side-nav ul > li > a.collapsible-header{
+    height:48px;
+}
+.side-nav .study > ul > li > a:hover{
      background: url(../images/StudyUsers_Clicked.png) no-repeat 21px center;
 }
-.manage-study a{
+.side-nav .manage-study >ul > li > a{
         background: url(../images/ManageStudy_Normal.png) no-repeat 21px center;
         padding-left:61px;
 }
-.manage-study a:hover{
+.side-nav .manage-study >ul > li > a:hover{
      background: url(../images/ManageStudy_Clicked.png) no-repeat 21px center;
 }
-.library a{
+.side-nav .library a{
         background: url(../images/Library_Normal.png) no-repeat 21px center;
         padding-left:61px;
 }
-.library a:hover{
+.side-nav .library a:hover{
      background: url(../images/Library_Clicked.png) no-repeat 21px center;
 }
-.query a{
+.side-nav .query a{
         background: url(../images/Querylist_Normal.png) no-repeat 21px center;
         padding-left:61px;
 }
-.query a:hover{
+.side-nav .query a:hover{
      background: url(../images/Querylist_Clicked.png) no-repeat 21px center;
 }
-.reports a{
+.side-nav .reports a{
         background: url(../images/Reports_Normal.png) no-repeat 21px center;
         padding-left:61px;
 }
-.reports a:hover{
+.side-nav .reports a:hover{
      background: url(../images/Reports_Clicked.png) no-repeat 21px center;
 }
-
+.side-nav .collapsible-body{
+    background-color:#263238 !important; 
+}
+ul.side-nav .collapsible-body li a{
+    padding-left:80px;
+    line-height: 20px;
+}
 .dummyDiv{
     height:48px;
     width:100%;

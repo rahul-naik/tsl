@@ -3,7 +3,7 @@ $(function () {
     var $sidebarEventTarget = $('#collapseSideBar');
     var $hoverContainer = $('#left-sidebar-nav');
     var $sidebarContainer = $('#left-sidebar-nav');
-
+   $('select').material_select();
     $sidebarEventTarget.on('click', function (e) {
         e.stopPropagation();
         e.preventDefault();
