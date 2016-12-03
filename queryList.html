@@ -17,7 +17,7 @@
 
 <body>
   <div class="navbar-fixed">
-    <nav class=" lighten-custom" role="navigation">
+     <nav class=" lighten-custom" role="navigation">
       <div class="nav-wrapper container">
         <a id="logo-container" href="#" class="brand-logo valign-wrapper"><img class="responsive-img" src="images/Logo.png" /></a>
         <ul class="right hide-on-med-and-down ">
@@ -38,27 +38,29 @@
               <img class="right responsive-img dropImage" src="images/drop.png" />
             </a>
             <ul id='dropdown1' class='dropdown-content'>
-              <li>
-                <div class="input-field col s12">
-                  <select>
-                  <option value="" disabled selected></option>
+              <li class="space-drop">
+                 <label class="drpdown-label">Profile View</label>
+                <div class="input-field col s12 dropdown-holder">
+                 <select>
+                  <option value="" selected>Investigator</option>
                   <option value="1">Option 1</option>
                   <option value="2">Option 2</option>
                   <option value="3">Option 3</option>
                 </select>
-                  <label>Profile View</label>
+                  <span class="notf">change value to switch profile</span>
                 </div>
               </li>
-              <li class="divider"></li>
-              <li>
-                <div class="input-field col s12">
+              
+              <li class="space-drop">
+                 <label class="drpdown-label">Dashboard View</label>
+                <div class="input-field col s12 dropdown-holder">
                   <select>
-                  <option value="" disabled selected></option>
+                  <option value=""  selected>Main Dashboard</option>
                   <option value="1">Option 1</option>
                   <option value="2">Option 2</option>
                   <option value="3">Option 3</option>
                 </select>
-                  <label>Dashboard View</label>
+                 <span class="notf">change value to switch dashboard</span>
                 </div>
               </li>
               <li><a href="#!">Settings</a></li>
@@ -84,30 +86,59 @@
   </div>
   <div class="container overflow-container flex-container">
 
-    <div id="left-sidebar-nav" class="left">
+     <div id="left-sidebar-nav" class="left">
 
       <ul id="slide-out" class="side-bar side-nav leftside-navigation">
 
         <li class="bold active" id="colapseOnHover">
           <a href="#" class="waves-effect valign-wrapper waves-cyan right-align"><img id="collapseSideBar" class="responsive-img" src="images/CollapseArrow.png" /></a>
         </li>
-        <li class="bold active dashboard">
+        <li class="bold active dashboard drpdn">
           <a href="#" class="waves-effect waves-cyan "> Dashboard</a>
         </li>
-        <li class="bold active study">
-          <a href="#" class="waves-effect waves-cyan "> Study Users & Preferences</a>
+        <li class="bold active study drpdn">
+
+          <ul class="collapsible collapsible-accordion">
+            <li>
+              <a href="#" class="collapsible-header waves-effect waves-cyan "> Study Users & Preferences</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="#!">Roles</a></li>
+                  <li><a href="#!">Users</a></li>
+                  <li><a href="#!">Units</a></li>
+                  <li><a href="#!">Location</a></li>
+                  <li><a href="#!">Study types</a></li>
+                  <li><a href="#!">Email template</a></li>  
+                  <li><a class="small-line" href="#!">Company default settings</a></li>
+                  <li><a class="small-line" href="#!">Company password policy</a></li>  
+                </ul>
+              </div>
+            </li>
+          </ul>
 
         </li>
-        <li class="bold active manage-study">
-          <a href="#" class="waves-effect waves-cyan "> Manage Studies</a>
+        <li class="bold active manage-study drpdn">
+          <ul class="collapsible collapsible-accordion">
+            <li>
+               <a href="#" class="collapsible-header waves-effect waves-cyan "> Manage Studies</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="#!">Create Study</a></li>
+                  <li><a href="#!">Study Design</a></li>
+                  <li><a href="#!">Input data to study</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+         
         </li>
-        <li class="bold active library">
+        <li class="bold active library drpdn">
           <a href="#" class="waves-effect waves-cyan "> Library</a>
         </li>
-        <li class="bold active query">
-          <a href="#" class="waves-effect waves-cyan "> Query List</a>
+        <li class="bold active query drpdn">
+          <a href="queryList.html" class="waves-effect waves-cyan "> Query List</a>
         </li>
-        <li class="bold active reports">
+        <li class="bold active reports drpdn">
           <a href="#" class="waves-effect waves-cyan "> Reports</a>
         </li>
       </ul>
@@ -117,18 +148,20 @@
 
     <div class="main-container">
       <div class="row section-header">
-        <div class="col m3">
+        <div class="col m6">
           <div class="left dashboard-text">Manage Query List</div>
         </div>
-        <div class="col m9">
+        <div class="col m6">
 
-          <div class="right">
+         <div class="right">
             <a href="#" class="button-collapse dropdown-button" data-alignment="right" data-beloworigin="true" data-activates='dropdown2'><img src="images/Hamburger_Icon.png" class="responsive-img" /></a>
             <ul id='dropdown2' class='dropdown-content'>
-              <li><a href="#!">Link 1</a></li>
-              <li><a href="#!">Link 2</a></li>
-              <li class="divider"></li>
-              <li><a href="#!">Link 3</a></li>
+              <li><a href="#!">Create Study</a></li>
+              <li><a href="#!">Manage Study</a></li>
+              <li><a href="#!">Study Design</a></li>
+              <li><a href="#!">Monitor / Inout Data</a></li>
+               <li><a href="#!">Manage User</a></li>
+                <li><a href="#!">View Query List</a></li>
             </ul>
           </div>
         </div>
