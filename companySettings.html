@@ -38,27 +38,29 @@
               <img class="right responsive-img dropImage" src="images/drop.png" />
             </a>
             <ul id='dropdown1' class='dropdown-content'>
-              <li>
-                <div class="input-field col s12">
+              <li class="space-drop">
+                <label class="drpdown-label">Profile View</label>
+                <div class="input-field col s12 dropdown-holder">
                   <select>
-                  <option value="" disabled selected></option>
+                  <option value="" selected>Investigator</option>
                   <option value="1">Option 1</option>
                   <option value="2">Option 2</option>
                   <option value="3">Option 3</option>
                 </select>
-                  <label>Profile View</label>
+                  <span class="notf">change value to switch profile</span>
                 </div>
               </li>
-              <li class="divider"></li>
-              <li>
-                <div class="input-field col s12">
+
+              <li class="space-drop">
+                <label class="drpdown-label">Dashboard View</label>
+                <div class="input-field col s12 dropdown-holder">
                   <select>
-                  <option value="" disabled selected></option>
+                  <option value=""  selected>Main Dashboard</option>
                   <option value="1">Option 1</option>
                   <option value="2">Option 2</option>
                   <option value="3">Option 3</option>
                 </select>
-                  <label>Dashboard View</label>
+                  <span class="notf">change value to switch dashboard</span>
                 </div>
               </li>
               <li><a href="#!">Settings</a></li>
@@ -83,7 +85,6 @@
 
   </div>
   <div class="container overflow-container flex-container">
-    <!-- START LEFT SIDEBAR NAV-->
     <div id="left-sidebar-nav" class="left">
 
       <ul id="slide-out" class="side-bar side-nav leftside-navigation">
@@ -91,10 +92,10 @@
         <li class="bold active" id="colapseOnHover">
           <a href="#" class="waves-effect valign-wrapper waves-cyan right-align"><img id="collapseSideBar" class="responsive-img" src="images/CollapseArrow.png" /></a>
         </li>
-        <li class="bold active dashboard">
+        <li class="bold active dashboard drpdn">
           <a href="#" class="waves-effect waves-cyan "> Dashboard</a>
         </li>
-        <li class="bold active study">
+        <li class="bold active study drpdn">
 
           <ul class="collapsible collapsible-accordion">
             <li>
@@ -107,15 +108,15 @@
                   <li><a href="#!">Location</a></li>
                   <li><a href="#!">Study types</a></li>
                   <li><a href="#!">Email template</a></li>
-                  <li><a href="#!">Company default settings</a></li>
-                  <li><a href="#!">Company password policy</a></li>
+                  <li><a class="small-line" href="#!">Company default settings</a></li>
+                  <li><a class="small-line" href="#!">Company password policy</a></li>
                 </ul>
               </div>
             </li>
           </ul>
 
         </li>
-        <li class="bold active manage-study">
+        <li class="bold active manage-study drpdn">
           <ul class="collapsible collapsible-accordion">
             <li>
               <a href="#" class="collapsible-header waves-effect waves-cyan "> Manage Studies</a>
@@ -130,181 +131,190 @@
           </ul>
 
         </li>
-        <li class="bold active library">
+        <li class="bold active library drpdn">
           <a href="#" class="waves-effect waves-cyan "> Library</a>
         </li>
-        <li class="bold active query">
+        <li class="bold active query drpdn">
           <a href="queryList.html" class="waves-effect waves-cyan "> Query List</a>
         </li>
-        <li class="bold active reports">
+        <li class="bold active reports drpdn">
           <a href="#" class="waves-effect waves-cyan "> Reports</a>
         </li>
       </ul>
       <a href="#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only cyan"><i class="mdi-navigation-menu"></i></a>
     </div>
-    <!-- END LEFT SIDEBAR NAV-->
-
     <div class="main-container">
       <div class="row section-header">
-        <div class="col m4">
+        <div class="col m6">
           <div class="left dashboard-text">Company Default settings</div>
         </div>
-        <div class="col m8">
+        <div class="col m6">
 
           <div class="right">
             <a href="#" class="button-collapse dropdown-button" data-alignment="right" data-beloworigin="true" data-activates='dropdown2'><img src="images/Hamburger_Icon.png" class="responsive-img" /></a>
             <ul id='dropdown2' class='dropdown-content'>
-              <li><a href="#!">Link 1</a></li>
-              <li><a href="#!">Link 2</a></li>
-              <li class="divider"></li>
-              <li><a href="#!">Link 3</a></li>
+              <li><a href="#!">Create Study</a></li>
+              <li><a href="#!">Manage Study</a></li>
+              <li><a href="#!">Study Design</a></li>
+              <li><a href="#!">Monitor / Input Data</a></li>
+              <li><a href="#!">Manage User</a></li>
+              <li><a href="#!">View Query List</a></li>
             </ul>
           </div>
         </div>
       </div>
 
-      <div class="row">
-        <div class="col s12 m12">
-          <div class="row">
-            <div class="input-field col s12 m6">
-              <select class="icons">
-                <option value="" disabled selected>Font</option>
+      <div class="card setting-cards">
+        <div class="level-settings">
+          <span class="activity-current">Study Level Settings</span>
+        </div>
+
+        <div class="row">
+          <div class="col s12 m4">
+            <label for=""><span class="mandate">*</span>  Font</label>
+            <select class="icons">
+                
                 <option value="1">Arial</option>
-                <option value="2">Calibri</option>
+                <option value="2" selected>Calibri</option>
                 <option value="3">Roboto</option>
              </select>
-            </div>
-            <div class="input-field col s12 m6">
-              <select class="icons">
+          </div>
+          <div class="col s12 m3">
+          </div>
+          <div class="col s12 m2">
+            <label for=""><span class="mandate">*</span>  Size</label>
+            <select class="icons">
                  <option value="" disabled selected>Size</option>
                   <option value="1">20</option>
                   <option value="2">15</option>
                   <option value="3">12</option>
              </select>
-            </div>
           </div>
+        </div>
 
-          <div class="row">
-            <div class="input-field col s12 m6">
-              <select class="icons">
+        <div class="row">
+          <div class="col s12 m4">
+            <label for=""><span class="mandate">*</span>  Background Color</label>
+            <select class="icons">
                 <option value="" disabled selected>Background Color</option>
                 <option value="1">Tomato</option>
                 <option value="2">Red</option>
                 <option value="3">Cyan</option>
              </select>
-            </div>
-
           </div>
 
         </div>
-      </div>
-      <div class="row">
-        <div class="col s12 m12">
-          <div class="row">
-            <div class="input-field col s12 m6">
 
-              <select class="icons">
-                <option value="" disabled selected>Font</option>
+
+      </div>
+
+
+      <div class="card setting-cards">
+        <div class="level-settings">
+          <span class="activity-current">Visit / Study Logs Header Settings</span>
+        </div>
+
+        <div class="row">
+          <div class="col s12 m4">
+            <label for=""><span class="mandate">*</span>  Font</label>
+            <select class="icons">
+                
                 <option value="1">Arial</option>
-                <option value="2">Calibri</option>
+                <option value="2" selected>Calibri</option>
                 <option value="3">Roboto</option>
              </select>
-            </div>
-            <div class="input-field col s12 m6">
-              <select class="icons">
-                <option value="" disabled selected>Size</option>
-                <option value="1">22</option>
-                <option value="2">23</option>
-                <option value="3">24</option>
-             </select>
-            </div>
           </div>
-
-          <div class="row">
-            <div class="input-field col s12 m6">
-              <select class="icons">
-                <option value="" disabled selected>Background Color</option>
-                <option value="1">Tomato</option>
-                <option value="2">Red</option>
-                <option value="3">Cyan</option>
-             </select>
-            </div>
-            <div class="input-field col s12 m6">
-              <select class="icons">
-                <option value="" disabled selected>H Alignment</option>
-                <option value="1">Vertical</option>
-                <option value="2">Horizontle</option>
-                <option value="3">Left</option>
-             </select>
-            </div>
-
+          <div class="col s12 m3">
           </div>
-          <div class="row">
-            <p>
-              <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-              <label for="filled-in-box">Bold</label>
-              <input type="checkbox" class="filled-in" id="italics" checked="checked" />
-              <label for="italics">Italic</label>
-            </p>
+          <div class="col s12 m2">
+            <label for=""><span class="mandate">*</span>  Size</label>
+            <select class="icons">
+                 <option value="" disabled selected>Size</option>
+                  <option value="1">20</option>
+                  <option value="2">15</option>
+                  <option value="3">12</option>
+             </select>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col s12 m12">
-          <div class="row">
-            <div class="input-field col s12 m6">
 
-              <select class="icons">
-                <option value="" disabled selected>Font</option>
+        <div class="row">
+          <div class="col s12 m4">
+            <label for=""><span class="mandate">*</span>  Background Color</label>
+            <select class="icons">
+                
+                <option value="1">Tomato</option>
+                <option value="2" selected>Red</option>
+                <option value="3">Cyan</option>
+             </select>
+          </div>
+          <div class="col s12 m3">
+          </div>
+          <div class="col s12 m2">
+            <label for=""><span class="mandate">*</span>  H Alignment</label>
+            <select class="icons">
+                 <option value="" selected>Left</option>
+                  <option value="1">Right</option>
+                  <option value="2">Top</option>
+                  <option value="3">Bottom</option>
+             </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col m6">
+            <label for="">Text Style</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col m2">
+            <input type="checkbox" class="filled-in" id="bold" checked="checked" />
+            <label for="bold" class="checkbox-labels">Bold</label>
+          </div>
+          <div class="col m2">
+            <input type="checkbox" class="filled-in" id="italics" checked="checked" />
+            <label for="italics" class="checkbox-labels">Italic</label>
+          </div>
+        </div>
+
+      </div>
+       <div class="card setting-cards">
+        <div class="level-settings">
+          <span class="activity-current">Visit / Study Logs Header Settings</span>
+        </div>
+
+        <div class="row">
+          <div class="col s12 m4">
+            <label for=""><span class="mandate">*</span>  Font</label>
+            <select class="icons">
+                
                 <option value="1">Arial</option>
-                <option value="2">Calibri</option>
+                <option value="2" selected>Calibri</option>
                 <option value="3">Roboto</option>
              </select>
-            </div>
-            <div class="input-field col s12 m6">
-              <select class="icons">
-                <option value="" disabled selected>Size</option>
-                <option value="1">22</option>
-                <option value="2">23</option>
-                <option value="3">24</option>
-             </select>
-            </div>
           </div>
-
-          <div class="row">
-            <div class="input-field col s12 m6">
-              <select class="icons">
-                <option value="" disabled selected>Background Color</option>
-                <option value="1">Tomato</option>
-                <option value="2">Red</option>
-                <option value="3">Cyan</option>
-             </select>
-            </div>
-            <div class="input-field col s12 m6">
-              <select class="icons">
-                <option value="" disabled selected>H Alignment</option>
-                <option value="1">Vertical</option>
-                <option value="2">Horizontle</option>
-                <option value="3">Left</option>
-             </select>
-            </div>
-
+          <div class="col s12 m3">
           </div>
-          <div class="row">
-            <p>
-              <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-              <label for="filled-in-box">Bold</label>
-              <input type="checkbox" class="filled-in" id="italics" checked="checked" />
-              <label for="italics">Italic</label>
-            </p>
+          <div class="col s12 m2">
+            <label for=""><span class="mandate">*</span>  Size</label>
+            <select class="icons">
+                 <option value="" disabled selected>Size</option>
+                  <option value="1">20</option>
+                  <option value="2">15</option>
+                  <option value="3">12</option>
+             </select>
           </div>
         </div>
-        <div class="col s12 m12">
-          <a class="waves-effect waves-light btn">Reset</a>
-          <a class="waves-effect waves-light btn">Save</a>
-        </div>
+
+        
+
+
       </div>
 
+      <div class="row top-padding">
+         <div class="col s12 m12">
+          <a class="waves-effect waves-light btn reset-button">Reset</a>
+          <a class="waves-effect waves-light btn save-button">Save</a>
+        </div>
+      </div>
     </div>
 
 
