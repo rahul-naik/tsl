@@ -455,9 +455,13 @@ footer{
     padding-bottom: 10px;
 }
 
-.setting-cards .select-wrapper input.select-dropdown{
+.setting-cards .select-wrapper input.select-dropdown,input.colour{
     border:1px solid #b4bfc5;
     padding-left:10px;
+}
+input[type=text].colour:focus{
+     border:1px solid #b4bfc5;
+     box-shadow: none;
 }
 
 [type="checkbox"].filled-in:checked+label:after{
@@ -479,4 +483,10 @@ footer{
 }
 .top-padding{
     padding-top:45px;
+}
+.sp-replacer{
+    display:none !important;
+}
+.colorPicker{
+    padding-top: 40px;
 }
