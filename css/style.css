@@ -455,11 +455,11 @@ footer{
     padding-bottom: 10px;
 }
 
-.setting-cards .select-wrapper input.select-dropdown,input.colour{
+.setting-cards .select-wrapper input.select-dropdown,input.colour,input[type=text].autocomplete{
     border:1px solid #b4bfc5;
     padding-left:10px;
 }
-input[type=text].colour:focus{
+input[type=text].colour:focus,input[type=text].autocomplete:focus{
      border:1px solid #b4bfc5;
      box-shadow: none;
 }
@@ -482,11 +482,24 @@ input[type=text].colour:focus{
     background-color: #2979ff !important;
 }
 .top-padding{
-    padding-top:45px;
+    padding-top:70px;
 }
 .sp-replacer{
     display:none !important;
 }
 .colorPicker{
     padding-top: 40px;
+}
+
+.autocomplete-suggestions{
+    background: #FFF;
+    border:1px solid #CCC;
+}
+.autocomplete-suggestion{
+    padding:10px;
+}
+.closeBtn{
+    top:0;
+    right:0;
+    position: absolute;
 }
