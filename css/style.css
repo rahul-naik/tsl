@@ -14,6 +14,9 @@
 small {
     font-size: 0.8rem;
 }
+div.row{
+    margin-bottom:0 !important;
+}
 .user-data{
     padding-left:12px;
 }
@@ -47,7 +50,7 @@ span.user-role{
     color:#90a4ae;
     font-weight: 300;
 }
-.side-bar li:hover > a{
+.side-bar li:hover > a,#slide-out > li.active > a{
     color:#fff;
 }
 .side-bar.fixed{
@@ -247,6 +250,7 @@ img.responsive-img{
 #slide-out > li:hover{
     background-color: #2979ff;
 }
+
 .side-nav .dashboard a{
         background: url(../images/Dashboard_Normal.png) no-repeat 21px center;
         padding-left:61px;
@@ -254,7 +258,7 @@ img.responsive-img{
 .side-nav .dashboard:hover a{
      background: url(../images/Dashboard_Clicked.png) no-repeat 21px center;
 }
-.side-nav .study >ul > li > a{
+.side-nav .study  > a{
         background: url(../images/StudyUsers_Normal.png) no-repeat 21px center;
         padding-left:61px;
         line-height: 25px;
@@ -262,14 +266,14 @@ img.responsive-img{
 ul.side-nav ul > li > a.collapsible-header{
     height:48px;
 }
-.side-nav .study:hover > ul > li > a{
+.side-nav .study:hover  > a,.side-nav .study.active  > a{
      background: url(../images/StudyUsers_Clicked.png) no-repeat 21px center;
 }
-.side-nav .manage-study >ul > li > a{
+.side-nav .manage-study  > a{
         background: url(../images/ManageStudy_Normal.png) no-repeat 21px center;
         padding-left:61px;
 }
-.side-nav .manage-study:hover >ul > li > a{
+.side-nav .manage-study:hover > a,.side-nav .manage-study.active  > a{
      background: url(../images/ManageStudy_Clicked.png) no-repeat 21px center;
 }
 .side-nav .library a{
@@ -295,6 +299,13 @@ ul.side-nav ul > li > a.collapsible-header{
 }
 .side-nav .collapsible-body{
     background-color:#263238 !important; 
+}
+.side-nav .collapsible-header{
+    height:48px;
+}
+
+.collapsible-body ul li a:hover{
+    background: #172024;
 }
 
 ul.side-nav .collapsible-body li a{
@@ -339,11 +350,16 @@ footer{
 .sidebar-not-collapsed .side-nav li.drpdn:hover,.display-over .side-nav li.drpdn:hover{
     background: url('../images/SubmenuArrow_Clicked.png') no-repeat 90% center; 
 }
-
+#slide-out > li.active{
+    background: #2979ff url('../images/SubmenuArrow_down.png') no-repeat 90% 22px; 
+}
 .small-line{
-    line-height: 17px !important;
+    /*line-height: 17px !important;*/
 }
 
+.dropdown-content.select-dropdown li:hover{
+    background-color: #e1e1e1 !important;
+}
 #dropdown2{
     width:200px !important;
      height:232px !important;
@@ -388,7 +404,7 @@ footer{
         font-weight: 400;
         color:#000;
 }
-#dropdown1 .select-dropdown{
+#dropdown1 input.select-dropdown{
     border:1px solid #b4bfc5;
     padding-left:10px;
 }
@@ -515,6 +531,14 @@ input[type=text].autocomplete{
 .autocomplete-suggestions{
     background: #FFF;
     border:1px solid #CCC;
+}
+input.colour{
+    background-image: url(../images/colorpicker.png) !important;
+    background-position-x: right;
+    background-position-y: center;
+    background-size: initial;
+    background-repeat:no-repeat;
+
 }
 .autocomplete-suggestion{
     padding:10px;
