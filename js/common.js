@@ -7,8 +7,9 @@ $(function () {
     $sidebarEventTarget.on('click', function (e) {
         e.stopPropagation();
         e.preventDefault();
-        if ($sidebarContainer.hasClass('sidebar-collapsed')) {
+        if ($sidebarContainer.hasClass('sidebar-collapsed')) {  
             $sidebarContainer.removeClass('sidebar-collapsed');
+             $sidebarContainer.addClass('sidebar-not-collapsed');
             $('.main-container').removeClass('shift-container');
 
             if ($(this).is(':hidden')) {
@@ -25,8 +26,9 @@ $(function () {
 
         } else {
             $sidebarContainer.addClass('sidebar-collapsed');
+            $sidebarContainer.removeClass('sidebar-not-collapsed');
             $('.main-container').addClass('shift-container');
-
+      
             $(this).hide(function () {
                 $hoverContainer.addClass('hoverMe');
             });
