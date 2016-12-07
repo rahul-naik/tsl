@@ -40,14 +40,15 @@ span.user-role{
     width:auto;
     transform: none;
     z-index: 1;
+        height: 100%;
+            overflow: hidden;
 }
 .side-bar a{
     color:#90a4ae;
-    font-weight: 200;
+    font-weight: 300;
 }
-.side-bar a:hover{
-    background-color: #2979ff;
-     color:#fff;
+.side-bar li:hover > a{
+    color:#fff;
 }
 .side-bar.fixed{
     top:64px;
@@ -100,7 +101,7 @@ span.user-role{
     background: #FFF;
 }
 .overflow-container{
-    overflow: hidden;
+    
 }
 .dashboard-text{
     font-weight: 600;
@@ -174,6 +175,7 @@ div.shift-container{
     position: absolute;
     width: 60px;
     height:100%;
+    z-index: 100;
 }
 #left-sidebar-nav{
 -webkit-transition: all .3s cubic-bezier(.55,0,.55,.2),width .1s linear,min-width .1s linear,max-width .1s linear;
@@ -242,14 +244,14 @@ img.responsive-img{
 .userDetails{
     height:64px;
 }
-#slide-out li:hover{
+#slide-out > li:hover{
     background-color: #2979ff;
 }
 .side-nav .dashboard a{
         background: url(../images/Dashboard_Normal.png) no-repeat 21px center;
         padding-left:61px;
 }
-.side-nav .dashboard a:hover{
+.side-nav .dashboard:hover a{
      background: url(../images/Dashboard_Clicked.png) no-repeat 21px center;
 }
 .side-nav .study >ul > li > a{
@@ -260,40 +262,41 @@ img.responsive-img{
 ul.side-nav ul > li > a.collapsible-header{
     height:48px;
 }
-.side-nav .study > ul > li > a:hover{
+.side-nav .study:hover > ul > li > a{
      background: url(../images/StudyUsers_Clicked.png) no-repeat 21px center;
 }
 .side-nav .manage-study >ul > li > a{
         background: url(../images/ManageStudy_Normal.png) no-repeat 21px center;
         padding-left:61px;
 }
-.side-nav .manage-study >ul > li > a:hover{
+.side-nav .manage-study:hover >ul > li > a{
      background: url(../images/ManageStudy_Clicked.png) no-repeat 21px center;
 }
 .side-nav .library a{
         background: url(../images/Library_Normal.png) no-repeat 21px center;
         padding-left:61px;
 }
-.side-nav .library a:hover{
+.side-nav .library:hover a{
      background: url(../images/Library_Clicked.png) no-repeat 21px center;
 }
 .side-nav .query a{
         background: url(../images/Querylist_Normal.png) no-repeat 21px center;
         padding-left:61px;
 }
-.side-nav .query a:hover{
+.side-nav .query:hover a{
      background: url(../images/Querylist_Clicked.png) no-repeat 21px center;
 }
 .side-nav .reports a{
         background: url(../images/Reports_Normal.png) no-repeat 21px center;
         padding-left:61px;
 }
-.side-nav .reports a:hover{
+.side-nav .reports:hover a{
      background: url(../images/Reports_Clicked.png) no-repeat 21px center;
 }
 .side-nav .collapsible-body{
     background-color:#263238 !important; 
 }
+
 ul.side-nav .collapsible-body li a{
     padding-left: 60px;
     line-height: 36px;
@@ -435,7 +438,18 @@ footer{
     padding-left: 10px;
 }
 .query-wrapper{
-        padding: 15px;
+        padding: 15px 0;
+        position: relative;
+}
+div.query-wrapper i{
+    position: absolute;
+    top: 27px;
+    right: 10px;
+    cursor: pointer;
+    color: #5494ff;
+}
+.query-wrapper input{
+    background: #FFF;
 }
 .query-table tr td {
     text-align: center;
@@ -455,15 +469,22 @@ footer{
     padding-bottom: 10px;
 }
 
-.setting-cards .select-wrapper input.select-dropdown,input.colour,input[type=text].autocomplete{
+.setting-cards .select-wrapper input.select-dropdown,input.colour{
     border:1px solid #b4bfc5;
     padding-left:10px;
+    height: 30px;
 }
-input[type=text].colour:focus,input[type=text].autocomplete:focus{
+
+input[type=text].colour:focus{
      border:1px solid #b4bfc5;
      box-shadow: none;
 }
-
+input[type=text].autocomplete:focus{
+    border-bottom: 1px solid #9e9e9e;
+}
+input[type=text].autocomplete{
+    padding-left:10px;
+}
 [type="checkbox"].filled-in:checked+label:after{
     border: 2px solid #5494ff;
     background-color: #5494ff;
@@ -488,7 +509,7 @@ input[type=text].colour:focus,input[type=text].autocomplete:focus{
     display:none !important;
 }
 .colorPicker{
-    padding-top: 40px;
+    padding-top: 30px;
 }
 
 .autocomplete-suggestions{
@@ -502,4 +523,7 @@ input[type=text].colour:focus,input[type=text].autocomplete:focus{
     top:0;
     right:0;
     position: absolute;
+}
+div.select-wrapper input.select-dropdown{
+    height: 30px;
 }
