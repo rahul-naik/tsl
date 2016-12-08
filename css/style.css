@@ -365,7 +365,7 @@ footer{
      height:232px !important;
     background: #FFF;
     padding-top: 21px;
-    padding-left: 25px
+
 }
 #dropdown2 li,#dropdown1 li{
     min-height: 35px;
@@ -375,11 +375,14 @@ footer{
     font-size:14px;
     padding: 0 16px;
 }
-#dropdown2 li:hover,#dropdown1 li:hover{
+#dropdown2 a{
+    line-height: 33px;
+}
+#dropdown1 li:hover{
     background: transparent;
 }
 
-#dropdown2 a:hover,#dropdown1 a:hover{
+#dropdown1 a:hover{
     color:#5494ff;
     background: transparent;
 }
@@ -550,4 +553,16 @@ input.colour{
 }
 div.select-wrapper input.select-dropdown{
     height: 30px;
+}
+.pagination-div{
+    padding-top:10px;
+    font-size: 12px;
+}
+.pagination-div span{
+    color: #888888;  
+}
+
+.arrows{
+    padding:5px;
+    cursor:pointer;
 }
