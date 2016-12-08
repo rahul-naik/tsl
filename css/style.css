@@ -374,16 +374,17 @@ footer{
     color:#000;
     font-size:14px;
     padding: 0 16px;
+        line-height: 33px
 }
 #dropdown2 a{
     line-height: 33px;
 }
 #dropdown1 li:hover{
-    background: transparent;
+    background: #e1e1e1;
 }
 
 #dropdown1 a:hover{
-    color:#5494ff;
+  
     background: transparent;
 }
 .dashboard-text{
@@ -410,6 +411,10 @@ footer{
 #dropdown1 input.select-dropdown{
     border:1px solid #b4bfc5;
     padding-left:10px;
+}
+
+#dropdown1 >li:hover:not('.space-drop'){
+    background: #e1e1e1 !important; 
 }
 .notf{
     font-size: 10px;
