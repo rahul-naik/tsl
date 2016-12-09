@@ -643,6 +643,7 @@ div.select-wrapper input.select-dropdown{
     font-weight:500;
     font-size: 16px; 
     margin-bottom:10px;
+        margin-top: 0;
 }
 .req-fields{
     color:red;
@@ -700,6 +701,7 @@ div.select-wrapper input.select-dropdown{
 #modal1{
     max-height: 80%;
     border-radius: 0;
+    width:50%
 }
 
 #modal1 .modal-footer{
