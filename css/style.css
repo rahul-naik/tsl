@@ -117,11 +117,11 @@ span.user-role{
     margin: 0 32px 0 0;
 }
 .content-subheader{
-    padding:10px 5px;
+    padding:10px 13px;
 }
 .activity-current{
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 500;
 }
 .view-all-activities{
     color: #6C81FA;
@@ -440,8 +440,18 @@ footer{
 .export-options div{
     height:48px;
 }
-.selected-export{
-    background: #cfdee5;
+div.selected-export{
+    background: #2879ff;
+    color:#FFF;
+}
+.export-data{
+    margin:0 15px;
+    background:#FFF;
+    color:#000;
+}
+
+.export-options div:last-child{
+        flex-direction: row-reverse;
 }
 .query-table th{
     font-size: 12px;
@@ -462,13 +472,12 @@ footer{
     padding-left: 10px;
 }
 .query-wrapper{
-        padding: 15px 0;
-        position: relative;
+
 }
 div.query-wrapper i{
     position: absolute;
-    top: 27px;
-    right: 10px;
+    top: 22px;
+    left: 18px;
     cursor: pointer;
     color: #5494ff;
 }
@@ -494,20 +503,20 @@ div.query-wrapper i{
 }
 
 .setting-cards .select-wrapper input.select-dropdown,input.colour{
-    border:1px solid #b4bfc5;
+    border-bottom:1px solid #b4bfc5;
     padding-left:10px;
     height: 30px;
 }
 
 input[type=text].colour:focus{
-     border:1px solid #b4bfc5;
+     border-bottom:1px solid #b4bfc5;
      box-shadow: none;
 }
 input[type=text].autocomplete:focus{
     border-bottom: 1px solid #9e9e9e;
 }
 input[type=text].autocomplete{
-    padding-left:10px;
+    padding-left:34px;
 }
 [type="checkbox"].filled-in:checked+label:after{
     border: 2px solid #5494ff;
@@ -527,7 +536,7 @@ input[type=text].autocomplete{
     background-color: #2979ff !important;
 }
 .top-padding{
-    padding-top:70px;
+    padding-top:40px;
 }
 .sp-replacer{
     display:none !important;
