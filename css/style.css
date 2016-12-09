@@ -361,19 +361,19 @@ footer{
     background-color: #e1e1e1 !important;
 }
 #dropdown2{
-    width:200px !important;
-     height:232px !important;
+    width:216px !important;
+    padding-top:10px;
     background: #FFF;
-    padding-top: 21px;
+
 
 }
 #dropdown2 li,#dropdown1 li{
     min-height: 35px;
 }
-#dropdown2 a ,#dropdown1 a{
+#dropdown1 a{
     color:#000;
     font-size:14px;
-    padding: 0 16px;
+    padding: 0 45px;
         line-height: 33px
 }
 #dropdown2 a{
@@ -394,8 +394,6 @@ footer{
 
 #dropdown1{
     width:225px !important;
-    height:370px !important;
-
 }
 
 .dropdown-holder{
@@ -409,7 +407,7 @@ footer{
         color:#000;
 }
 #dropdown1 input.select-dropdown{
-    border:1px solid #b4bfc5;
+    border-bottom:1px solid #b4bfc5;
     padding-left:10px;
 }
 
@@ -418,7 +416,7 @@ footer{
 }
 .notf{
     font-size: 10px;
-    color:#ff612a;
+    color:#86b473;
     display:block;
     margin-top:-20px;
 }
@@ -429,6 +427,7 @@ footer{
 }
 .space-drop{
     padding: 10px 0;
+    border-bottom:1px dashed #c8c8c8;
 }
 .export-text{
     font-weight: 500;
@@ -518,7 +517,7 @@ input[type=text].autocomplete:focus{
 input[type=text].autocomplete{
     padding-left:34px;
 }
-[type="checkbox"].filled-in:checked+label:after{
+[type="checkbox"].filled-in:checked+label:after,[type="radio"].with-gap:checked+label:after{
     border: 2px solid #5494ff;
     background-color: #5494ff;
 }
@@ -528,6 +527,16 @@ input[type=text].autocomplete{
 }
 .mandate{
     color:red;
+    vertical-align: middle;
+}
+.mandate-info{
+    font-size: 12px;
+    color:#707070;
+    padding-top:10px;
+}
+.mandate-info span{
+    margin:0 2px;
+    display: inline-block;
 }
 .reset-button{
     background-color: #78909c !important;
@@ -561,8 +570,8 @@ input.colour{
     padding:10px;
 }
 .closeBtn{
-    top:0;
-    right:0;
+   top: 5px;
+    right: 9px;
     position: absolute;
 }
 div.select-wrapper input.select-dropdown{
@@ -579,4 +588,127 @@ div.select-wrapper input.select-dropdown{
 .arrows{
     padding:5px;
     cursor:pointer;
+}
+
+#dropdown2 li a.Create_study{
+    background: url('../images/CreateStudy_Normal.png') no-repeat 17px center;
+}
+#dropdown2 li a.manage_study{background: url('../images/ManStudyLogs_Normal.png') no-repeat 17px center;}
+#dropdown2 li a.study_design{background: url('../images/StudyDesign_Normal.png') no-repeat 17px center;}
+#dropdown2 li a.monitor_data{background: url('../images/MonitorInputData_Normal.png') no-repeat 17px center;}
+#dropdown2 li a.manage_user{background: url('../images/ManageUsers_Normal.png') no-repeat 17px center;}
+#dropdown2 li a.view_list{background: url('../images/ViewQueryList_Normal.png') no-repeat 17px center;}
+#dropdown2 li a.manage_study:hover{background: url('../images/ManStudyLogs_Clicked.png') no-repeat 17px center;}
+#dropdown2 li a.study_design:hover{background: url('../images/StudyDesign_Clicked.png') no-repeat 17px center;}
+#dropdown2 li a.monitor_data:hover{background: url('../images/MonitorInputData_Clicked.png') no-repeat 17px center;}
+#dropdown2 li a.manage_user:hover{background: url('../images/ManageUsers_Clicked.png') no-repeat 17px center;}
+#dropdown2 li a.view_list:hover{background: url('../images/ViewQueryList_Clicked.png') no-repeat 17px center;}
+#dropdown2 a{
+    color:#000;
+    font-size:14px;
+        padding: 0 45px;
+        line-height: 33px
+}
+
+
+#dropdown1 li a.settings_icon{
+    background: url('../images/Setting_Normal.png') no-repeat 17px center;
+}
+#dropdown1 li a.release_note{
+    background: url('../images/ReleaseNote_Normal.png') no-repeat 17px center;
+}
+#dropdown1 li a.matrix{
+    background: url('../images/UserCapabilityMetrix_Normal.png') no-repeat 17px center;
+}
+#dropdown1 li a.sign-out{
+    background: url('../images/SignOut_Normal.png') no-repeat 17px center;
+}
+
+#dropdown1 li a.settings_icon:hover{
+    background: url('../images/Setting_Clicked.png') no-repeat 17px center;
+}
+#dropdown1 li a.release_note:hover{
+    background: url('../images/ReleaseNote_Clicked.png') no-repeat 17px center;
+}
+#dropdown1 li a.matrix:hover{
+    background: url('../images/UserCapabilityMetrix_Clicked.png') no-repeat 17px center;
+}
+#dropdown1 li a.sign-out:hover{
+    background: url('../images/SignOut_Clicked.png') no-repeat 17px center;
+}
+
+
+
+.user-details{
+    font-weight:500;
+    font-size: 16px; 
+    margin-bottom:10px;
+}
+.req-fields{
+    color:red;
+    font-size: 12px;
+    display:block;
+}
+
+.modal-content .input-label{
+    font-size: 12px;
+    color: #000;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.modal-content .modal-input{
+    height:2rem;
+    margin-bottom:0;
+    font-size: 12px;
+}
+.modal-content .dropdown-content li>span, .modal-content div.select-wrapper input.select-dropdown{
+    font-size: 12px;
+    margin-bottom: 0;
+}
+.modal-content input[type=text]:focus:not([readonly]){
+    border-bottom:1px solid #b4bfc5;
+    box-shadow: none;
+}
+.modal-content .row{
+    margin-bottom:25px !important;
+}
+
+.role-table thead th {
+    background: #eeeeee;
+    font-size: 14px;
+    font-weight: 500;
+    padding:10px 15px;
+}
+
+.role-table tbody td{
+    font-size: 12px;
+    font-weight: 300;
+    padding:5px 15px;
+}
+.role-table tbody tr:first-child td{
+    padding-top:10px;
+}
+.role-table{
+    border: 1px solid #b4bfc5;
+}
+
+[type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:before, [type="radio"].with-gap:checked+label:after{
+        border: 2px solid #5494ff;
+}
+
+#modal1{
+    max-height: 80%;
+    border-radius: 0;
+}
+
+#modal1 .modal-footer{
+    padding:24px;
+    overflow: hidden;
+    height:auto;
+}
+
+#modal1 .modal-footer .btn{
+    margin-right:10px;
+    border-radius: 0;
 }

@@ -63,10 +63,10 @@
                   <span class="notf">change value to switch dashboard</span>
                 </div>
               </li>
-              <li><a href="#!">Settings</a></li>
-              <li><a href="#!">Release Note</a></li>
-              <li><a href="#!">User capablity Matrix</a></li>
-              <li><a href="#!">Sign out</a></li>
+              <li><a class="settings_icon" href="#!">Settings</a></li>
+              <li><a class="release_note" href="#!">Release Note</a></li>
+              <li><a class="matrix" href="#!">User capablity Matrix</a></li>
+              <li><a class="sign-out" href="#!">Sign out</a></li>
             </ul>
           </li>
         </ul>
@@ -149,17 +149,19 @@
           <div class="right">
             <a href="#" class="button-collapse dropdown-button" data-alignment="right" data-beloworigin="true" data-activates='dropdown2'><img src="images/Hamburger_Icon.png" class="responsive-img" /></a>
             <ul id='dropdown2' class='dropdown-content'>
-              <li><a href="#!">Create Study</a></li>
-              <li><a href="#!">Manage Study</a></li>
-              <li><a href="#!">Study Design</a></li>
-              <li><a href="#!">Monitor / Input Data</a></li>
-              <li><a href="#!">Manage User</a></li>
-              <li><a href="#!">View Query List</a></li>
+              <li><a href="#!" class="Create_study">Create Study</a></li>
+              <li><a href="#!" class="manage_study">Manage Study</a></li>
+              <li><a href="#!" class="study_design">Study Design</a></li>
+              <li><a href="#!" class="monitor_data">Monitor / Input Data</a></li>
+              <li><a href="#!" class="manage_user">Manage User</a></li>
+              <li><a href="#!" class="view_list">View Query List</a></li>
             </ul>
           </div>
         </div>
       </div>
-
+      <div class="right-align mandate-info">
+        <span class="mandate">*</span><span>Mandatory fields</span>
+      </div>
       <div class="card setting-cards">
         <div class="level-settings">
           <span class="activity-current">Study Level Settings</span>
@@ -318,7 +320,7 @@
   <footer class="page-footer">
     <div class="footer-copyright">
       <div class="container">
-       &copy; 2016 Clindox. Build Version 1.6
+        &copy; 2016 Clindox. Build Version 1.6
 
       </div>
     </div>
@@ -326,11 +328,146 @@
   <div id="modal1" class="modal">
     <a href="#!" class="modal-close closeBtn"><img src="images/close.png" alt=""></a>
     <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
+
+      <p class="user-details">User Details</p>
+      <span class="mandate req-fields">All fields are required unless otherwise stated</span>
+      <div class="row">
+        <div class="col m3 right-align">
+          <label class="input-label">User ID </label>
+        </div>
+        <div class="col m4">
+          <input class="modal-input" type="text" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col m3 right-align">
+          <label class="input-label">First Name</label>
+        </div>
+        <div class="col m4">
+          <input class="modal-input" type="text" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col m3 right-align">
+          <label class="input-label">Last Name</label>
+        </div>
+        <div class="col m4">
+          <input class="modal-input" type="text" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col m3 right-align">
+          <label class="input-label">Login ID</label>
+        </div>
+        <div class="col m6">
+          <table class="role-table">
+            <thead>
+              <tr>
+                <th> Role</th>
+                <th>Default Role</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <input type="checkbox" class="filled-in" id="admin" checked="checked" />
+                  <label for="admin" class="checkbox-labels">Administrator</label>
+                </td>
+                <td>
+                  <input class="with-gap" name="group1" type="radio" id="test3" />
+                  <label for="test3">Lorem ipsum</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="filled-in" id="Editor" checked="checked" />
+                  <label for="Editor" class="checkbox-labels">Editor</label>
+                </td>
+                <td>
+                  <input class="with-gap" name="group1" type="radio" id="test1" />
+                  <label for="test1" class="checkbox-labels">Lorem ipsum</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="filled-in" id="Investigator" checked="checked" />
+                  <label for="Investigator" class="checkbox-labels">Investigator</label>
+                </td>
+                <td>
+                  <input class="with-gap" name="group1" type="radio" id="test2" />
+                  <label for="test2" class="checkbox-labels">Lorem ipsum</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="filled-in" id="data_manager" checked="checked" />
+                  <label for="data_manager" class="checkbox-labels">Data Manager</label>
+                </td>
+                <td>
+                  <input class="with-gap" name="group1" type="radio" id="test3" />
+                  <label for="test3" class="checkbox-labels">Lorem ipsum</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="filled-in" id="Monitor" checked="checked" />
+                  <label for="Monitor" class="checkbox-labels">Monitor</label>
+                </td>
+                <td>
+                  <input class="with-gap" name="group1" type="radio" id="test4" />
+                  <label for="test4" class="checkbox-labels">Lorem ipsum</label>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col m3 right-align">
+          <label class="input-label">Security Question</label>
+        </div>
+        <div class="col m6">
+          <select>
+                  <option value="" >What is your first name</option>
+                  <option value="1">What is your mother's maiden name</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col m3 right-align">
+          <label class="input-label">Security Answer</label>
+        </div>
+        <div class="col m6">
+          <input class="modal-input" placeholder="Security Answer" type="text" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col m3 right-align">
+          <label class="input-label">Landing Page</label>
+        </div>
+        <div class="col m6">
+          <select>
+                  <option value=""  selected>Main Dashboard</option>
+                  <option value="1">Query List</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col m3 right-align">
+          <label class="input-label">Email ID / Login ID</label>
+        </div>
+        <div class="col m6">
+          <input class="modal-input" placeholder="july@telsa.com" type="text" />
+        </div>
+      </div>
     </div>
-    <div class="modal-footer">
-      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    <div class="modal-footer ">
+      <a class="waves-effect waves-light btn reset-button left">Close</a>
+      <a class="waves-effect waves-light btn save-button left" >Save Change</a>
     </div>
   </div>
 
