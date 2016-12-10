@@ -537,7 +537,7 @@ input.colour {
 }
 .closeBtn {
     top: 5px;
-    right: 9px;
+    right: 24px;
     position: absolute;
 }
 div.select-wrapper input.select-dropdown {
