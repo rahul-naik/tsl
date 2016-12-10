@@ -707,3 +707,37 @@ div.select-wrapper input.select-dropdown {
     
     transform: rotate(180deg);
 }
+
+
+/**override Media queries tablet**/
+
+@media only screen and (max-width: 992px){
+    nav .brand-logo{
+     left: 0;
+     -webkit-transform: translateX(0); 
+     transform: translateX(0); 
+    }
+    #left-sidebar-nav{
+        position: absolute;
+    width: 60px;
+    height: 100%;
+    z-index: 100;
+    }
+    
+
+   
+
+    #dummy{
+        display:none;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+      .container{
+          width:90%;
+      }
+}
