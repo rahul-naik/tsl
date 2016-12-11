@@ -4,9 +4,9 @@ $(document).ready(function () {
 
     owl.owlCarousel({
         items: 3, //10 items above 1000px browser width
-        itemsDesktop: [1000, 5], //5 items between 1000px and 901px
+        itemsDesktop: [1500, 4], //5 items between 1000px and 901px
         itemsDesktopSmall: [1024, 3], // betweem 900px and 601px
-        itemsTablet: [992, 2], //2 items between 600 and 0
+        itemsTablet: [992, 3], //2 items between 600 and 0
         itemsMobile: false, // itemsMobile disabled - inherit from itemsTablet option
         navigation: true,
         navigationText: [

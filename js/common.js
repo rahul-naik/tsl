@@ -4,7 +4,7 @@ var $sidebarContainer = $('#left-sidebar-nav');
 
 function checkTablet() {
     if ($('#dummy').css('display') == 'none') {
-        $sidebarEventTarget.hide();
+        //$sidebarEventTarget.hide();
         $sidebarContainer.removeClass('display-over');
         $('.main-container').addClass('shift-container');
         $sidebarContainer.addClass('sidebar-collapsed').promise().done(function() {
@@ -44,11 +44,11 @@ $(function() {
 
     $(document).on('mouseover', '.hoverMe', function() {
         $sidebarContainer.addClass('display-over');
-        $sidebarEventTarget.show();
+       // $sidebarEventTarget.show();
     });
     $(document).on('mouseleave', '.hoverMe', function() {
         $sidebarContainer.removeClass('display-over');
-        $sidebarEventTarget.hide();
+      //  $sidebarEventTarget.hide();
     });
     checkTablet();
     $(window).resize(function() {

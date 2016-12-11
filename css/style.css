@@ -45,6 +45,7 @@ span.user-role {
 .side-bar a {
     color: #90a4ae;
     font-weight: 300;
+    padding: 0 21px;
 }
 .side-bar li:hover > a,
 #slide-out > li.active > a {
@@ -307,7 +308,7 @@ ul.side-nav .collapsible-body li a {
     margin: 0 auto;
     float: right;
     margin-top: 15px;
-    width: 20px;
+    width: 16px;
 }
 .head-nav {
     width: 80px;
@@ -724,8 +725,14 @@ div.select-wrapper input.select-dropdown {
     z-index: 100;
     }
     
-
-   
+div.display-over #collapseSideBar{
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+   .container{
+          width:97%;
+      }
 
     #dummy{
         display:none;
@@ -738,6 +745,12 @@ div.select-wrapper input.select-dropdown {
   and (orientation: landscape) 
   and (-webkit-min-device-pixel-ratio: 1) {
       .container{
-          width:90%;
+          width:95%;
       }
+}
+
+@media only screen and (min-width: 993px){
+.container {
+    width: 90%;
+}
 }
