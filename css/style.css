@@ -793,7 +793,7 @@ span.data-lock,div.data-lock{
     background: #ffeb3b;
     border:none;
 }
-spans.stop,div.stop{
+span.stop,div.stop{
     background: #e57373;
     border:none;
 }
@@ -801,6 +801,32 @@ spans.stop,div.stop{
     min-height:215px;
 }
 
+.breadcrumb_holder{
+    height:28px;
+}
+.breadcrumb_holder .breadcrumb{
+    font-size: 10px;
+    color:#000;
+}
+.breadcrumb_holder .breadcrumb:before{
+    font-size: 10px;
+    color:#000;
+    vertical-align: middle;
+}
+
+.breadcrumb_holder .breadcrumb.link_visit{
+    color:#f69100;
+}
+
+div.study-cards .select-wrapper input.select-dropdown{
+    border-bottom: none;
+    border-right:1px solid #e0e0e0;
+    padding-right: 10px;
+}
+
+div.study-cards .select-wrapper span.caret{
+    color:#5494ff;
+}
 /**override Media queries tablet**/
 
 @media only screen and (max-width: 992px){
