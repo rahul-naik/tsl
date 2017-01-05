@@ -110,7 +110,7 @@ span.user-role {
     margin: 0 32px 0 0;
 }
 .content-subheader {
-    padding: 10px 13px;
+    padding: 20px 0;
 }
 .activity-current {
     font-size: 16px;
@@ -509,6 +509,7 @@ input[type=text].autocomplete {
 }
 .reset-button {
     background-color: #78909c !important;
+        margin-right: 10px;
 }
 .save-button {
     background-color: #2979ff !important;
@@ -826,6 +827,27 @@ div.study-cards .select-wrapper input.select-dropdown{
 
 div.study-cards .select-wrapper span.caret{
     color:#5494ff;
+}
+div.test-study-options{
+    padding:20px 0;
+}
+div.test-study-options input.select-dropdown{
+    margin: 0;
+    border-bottom: none;
+}
+div.test-study-options.row div.input-field{
+    margin:0;
+    border-right:2px solid #e0e0e0;
+}
+
+.mandat{
+    color: #f44336;
+}
+.normal{
+    color: #ff6f00;
+}
+div.export-options{
+    padding:10px 13px;
 }
 /**override Media queries tablet**/
 

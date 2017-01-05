@@ -137,17 +137,18 @@
     </div>
 
     <div class="main-container">
-        <div class="breadcrumb_holder">
-          <div class="col s12">
-            <a href="#!" class="breadcrumb link_visit">Dashboard</a>
-            <a href="#!" class="breadcrumb link_visit">Input Study's List </a>
-            <a href="#!" class="breadcrumb">Study 1.6 Build 1.6 </a>
-          </div>
+      <div class="breadcrumb_holder">
+        <div class="col s12">
+          <a href="#!" class="breadcrumb link_visit">Dashboard</a>
+          <a href="#!" class="breadcrumb link_visit">Input Study's List </a>
+          <a href="#!" class="breadcrumb link_visit">Study 1.6 Build 1.6 </a>
+          <a href="#!" class="breadcrumb">Test 002 - V11</a>
         </div>
+      </div>
 
       <div class="row section-header">
         <div class="col m6">
-          <div class="left dashboard-text">Study 1.6 Build 1.6</div>
+          <div class="left dashboard-text">Test 002 - V11</div>
         </div>
         <div class="col m6">
 
@@ -166,75 +167,76 @@
       </div>
       <!--   Icon Section   -->
       <div class="row content-subheader">
-        <div class="col s6 m8">
-          <span class="activity-current">Subject Assigned to This Study</span>
+        <div class="col s6 m6">
+          <span class="activity-current">Test 002 - V11</span>
         </div>
 
-        <div class="col s6 m4 right-align sub-wrapper">
-          <i class="material-icons">search</i>
-          <input placeholder="Search by subject No\User" type="text" class="" id="">
+        <div class="col s6 m6 right-align sub-wrapper">
+          <a class="waves-effect waves-light btn reset-button">Preview Study</a>
+          <a class="waves-effect waves-light btn save-button">Submit for review</a>
         </div>
       </div>
-      <div class="row">
-        <div class="col s4 m4">
+      <div class="row test-study-options">
+        <div class="col s4 m6">
           <div class="row">
-            <div class="col s6 m6">
-              <span class="options-text bluemix">Electronic Signature</span>
-            </div>
-            <div class="col s6 m6">
-              <a href="#" class="button-collapse dropdown-button" data-alignment="left" data-beloworigin="true" data-activates='dropdown3'>
-                <span class="options-text bluemix">Color Guide</span></a>
-              <div id='dropdown3' class='dropdown-content'>
-                <div class="flex-container-column">
-                  <div class="flex-container ">
-                    <span class="legend-square"></span>
-                    <span class="legend-text">No action by user</span>
-                  </div>
-                  <div class="flex-container">
-                    <span class="legend-square progress-state"></span>
-                    <span class="legend-text">In progress</span>
-                  </div>
-                  <div class="flex-container">
-                    <span class="legend-square complete-review"></span>
-                    <span class="legend-text">Completed by user, submitted for review</span>
-                  </div>
-                  <div class="flex-container">
-                    <span class="legend-square  open-issue"></span>
-                    <span class="legend-text">Open Issue</span>
-                  </div>
-                  <div class="flex-container">
-                    <span class="legend-square sign-off"></span>
-                    <span class="legend-text">Submit for signed off</span>
-                  </div>
-                  <div class="flex-container">
-                    <span class="legend-square visit-done"></span>
-                    <span class="legend-text">Visit Signed off/Mark as complete</span>
-                  </div>
-                  <div class="flex-container">
-                    <span class="legend-square  data-lock"></span>
-                    <span class="legend-text">Data Lock</span>
-                  </div>
-                  <div class="flex-container ">
-                    <span class="legend-square stop"></span>
-                    <span class="legend-text">Mark as Stop</span>
-                  </div>
-                </div>
+            <div class="col s4 m4">
+              <div class="input-field col s12">
+                <select>
+                        <option value=""  selected>Subject Visit</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                      </select>
               </div>
             </div>
+            <div class="col s4 m4">
+              <div class="input-field col s12">
+                <select>
+                        <option value=""  selected>Study Log</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                      </select>
+              </div>
+            </div>
+            <div class="col s4 m4">
+              <span class="options-text bluemix">Electronic Signature</span>
+            </div>
           </div>
         </div>
-        <div class="col s4 m4">
-
+        <div class=" col s6 m2 ">
         </div>
-        <div class=" col s4 m4 right-align">
+        <div class=" col s6 m4">
           <div class="row">
-            <div class="col s6 m6">
-              <span class="options-text bluemix">New Subject</span>
+            <div class="col s4 m4">
+              <span class="options-text mandat">*-Mandatory</span>
             </div>
-            <div class="col s6 m6">
-              <span class="options-text">Status: 15 subjects</span>
+            <div class="col s4 m4">
+              <span class="options-text normal">N*-Normal</span>
+            </div>
+            <div class="col s4 m4">
+              <span class="options-text bluemix">#-Subject Entry</span>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="row export-options">
+        <div class="col s6 m6">
+          <div class="row">
+            <div class="col m3 selected-export center-align z-depth-2 export-data">
+              <span class="export-text">S1</span>
+            </div>
+            <div class="col m3 center-align z-depth-2 export-data">
+              <span class="export-text">S2</span>
+            </div>
+            <div class="col m3 center-align z-depth-2 export-data">
+              <span class="export-text">S3</span>
+            </div>
+          </div>
+        </div>
+        <div class="col s6 m6 right-align sub-wrapper">
+          <a class="waves-effect waves-light btn reset-button">Return</a>
+          <a class="waves-effect waves-light btn save-button">Save</a>
         </div>
       </div>
       <div class="row study-cards">
