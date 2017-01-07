@@ -748,6 +748,7 @@ div.sub-wrapper i {
 .card-panel input.select-dropdown{margin:0}
 .study-visit{font-size:16px;font-weight: 500;}
 .square{height:16px;width:16px;border:1px solid #757575;font-size: 10px;text-align:center;color:#263238;margin:0 15px;}
+.square a{color: #263238;display:block;}
 .square-holder{padding-top:20px;}
 .square-holder div:first-child{margin-left:0;}
 .square-holder div:last-child{margin-right:0;}
