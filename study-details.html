@@ -9,6 +9,7 @@
   <!--Import materialize.css-->
 
   <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/datepicker.css">
   <!--<link type="text/css" rel="stylesheet" href="css/jquery.dataTables.min.css" />-->
 
   <!--Let browser know website is optimized for mobile-->
@@ -76,7 +77,10 @@
     </nav>
   </div>
 
-  <div class="dummyDiv">
+  <div class="dummyDiv offset-top">
+
+  </div>
+  <div class="dummyDiv offset-breadcrumb">
 
   </div>
   <div class="container overflow-container flex-container">
@@ -183,9 +187,9 @@
               <div class="input-field col s12">
                 <select>
                         <option value=""  selected>Subject Visit</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
+                        <option value="1">Visit 1 – 55%</option>
+                        <option value="2">Visit 2 – 25%</option>
+                        <option value="3">Visit 2 – 0</option>
                       </select>
               </div>
             </div>
@@ -193,9 +197,10 @@
               <div class="input-field col s12">
                 <select>
                         <option value=""  selected>Study Log</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
+                        <option value="1">Adverse Event Log</option>
+                        <option value="2">Monitoring Log</option>
+                        <option value="3">Scale and VAS scale</option>
+                        <option value="4">New Log</option>
                       </select>
               </div>
             </div>
@@ -239,523 +244,160 @@
           <a class="waves-effect waves-light btn save-button">Save</a>
         </div>
       </div>
-      <div class="row study-cards">
-        <div class="col s6 m6">
-          <div class="card-panel">
-            <div class="row">
-              <div class="col s7 m7">
-                <span class="study-visit"> ID: Test 001 </span>
+      <div class="row" id="wrapper">
+        <div id="scroller">
+          <div class="col s12 m12">
+            <div class="card-panel pDetails">
+              <div class="row">
+                <span class="col s12 m12 ptitle">Weight:</span>
               </div>
-              <div class="col s5 m5">
-                <div class="row">
-                  <div class="col s8 m8">
-                    <div class="input-field col s12 dropdown-holder">
-                      <select>
-                        <option value=""  selected>Log</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                      </select>
-                    </div>
+              <div class="row">
+                <div class="col s3 m3">
+                  <input type="text" placeholder="text" class="" />
+                </div>
+                <div class="col s3 m3 right">
+                  <div class="col s8 m8 right-border right-align ">
+                    <a href="#!" class="options-text bluemix ">Audit Trial</a>
                   </div>
                   <div class="col s4 m4">
-                    <img src="images/Setting_Icon.png" class="responsive-img" /><img src="images/BlueArrow.png" class="responsive-img downarrow"
-                    />
+                    <img src="images/Setting_Icon.png" class="responsive-img" alt="">
                   </div>
+
                 </div>
               </div>
             </div>
-            <div class="flex-container square-holder">
-              <div class="square sign-off">1</div>
-              <div class="square sign-off">2</div>
-              <div class="square">3</div>
-              <div class="square">4</div>
-              <div class="square">5</div>
-              <div class="square">6</div>
-              <div class="square">7</div>
-              <div class="square">8</div>
-              <div class="square">9</div>
-              <div class="square">10</div>
-            </div>
-            <div class="flex-container square-holder">
-              <div class="square">11</div>
-              <div class="square">12</div>
-              <div class="square">13</div>
-              <div class="square">14</div>
-              <div class="square">15</div>
-              <div class="square">16</div>
-              <div class="square">17</div>
-              <div class="square">18</div>
-              <div class="square stop">19</div>
-              <div class="square">20</div>
-            </div>
-            <div class="flex-container square-holder">
-              <div class="square">24</div>
-              <div class="square">21</div>
-              <div class="square">26</div>
-              <div class="square">22</div>
-              <div class="square">23</div>
-              <div class="square">25</div>
-              <div class="square">27</div>
-              <div class="square">28</div>
-              <div class="square">29</div>
-              <div class="square">30</div>
-            </div>
-
           </div>
-        </div>
-        <div class="col s6 m6">
-          <div class="card-panel">
-            <div class="row">
-              <div class="col s7 m7">
-                <span class="study-visit"> ID: Test 001 </span>
+          <div class="col s12 m12">
+            <div class="card-panel pDetails">
+              <div class="row">
+                <span class="col s12 m12 ptitle">BP:</span>
               </div>
-              <div class="col s5 m5">
-                <div class="row">
-                  <div class="col s8 m8">
-                    <div class="input-field col s12 dropdown-holder">
-                      <select>
-                        <option value=""  selected>Log</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                      </select>
-                    </div>
+              <div class="row">
+                <div class="col s3 m3">
+                  <input type="text" placeholder="text" class="" />
+                </div>
+                <div class="col s3 m3 right">
+                  <div class="col s8 m8 right-border right-align ">
+                    <a href="#!" class="options-text bluemix ">Audit Trial</a>
                   </div>
                   <div class="col s4 m4">
-                    <img src="images/Setting_Icon.png" class="responsive-img" /><img src="images/BlueArrow.png" class="responsive-img downarrow"
-                    />
+                    <img src="images/Setting_Icon.png" class="responsive-img" alt="">
                   </div>
+
                 </div>
               </div>
             </div>
-            <div class="flex-container square-holder">
-              <div class="square">1</div>
-              <div class="square">2</div>
-              <div class="square">3</div>
-
-            </div>
-            <!--<div class="flex-container square-holder">
-              <div class="square">11</div>
-              <div class="square">12</div>
-              <div class="square">13</div>
-              <div class="square">14</div>
-              <div class="square">15</div>
-              <div class="square">16</div>
-              <div class="square">17</div>
-              <div class="square">18</div>
-              <div class="square">19</div>
-              <div class="square">20</div>
-            </div>
-            <div class="flex-container square-holder">
-              <div class="square">24</div>
-              <div class="square">21</div>
-              <div class="square">26</div>
-              <div class="square">22</div>
-              <div class="square">23</div>
-              <div class="square">25</div>
-              <div class="square">27</div>
-              <div class="square">28</div>
-              <div class="square">29</div>
-              <div class="square">30</div>
-            </div>
-            <div class="flex-container square-holder">
-              <div class="square">31</div>
-              <div class="square">32</div>
-              <div class="square">33</div>
-              <div class="square">34</div>
-              <div class="square">35</div>
-              <div class="square">36</div>
-              <div class="square">37</div>
-              <div class="square">38</div>
-              <div class="square">39</div>
-              <div class="square">40</div>
-            </div>-->
           </div>
-        </div>
-        <div class="col s6 m6">
-          <div class="card-panel">
-            <div class="row">
-              <div class="col s7 m7">
-                <span class="study-visit"> ID: Test 001 </span>
+          <div class="col s12 m12">
+            <div class="card-panel pDetails">
+              <div class="row">
+                <span class="col s12 m12 ptitle">Date:</span>
               </div>
-              <div class="col s5 m5">
-                <div class="row">
-                  <div class="col s8 m8">
-                    <div class="input-field col s12 dropdown-holder">
-                      <select>
-                        <option value=""  selected>Log</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                      </select>
-                    </div>
+              <div class="row">
+                <div class="col s3 m3">
+                  <input type="text" placeholder="MM/DD/YYYY" class="c-datepicker-btn" />
+                </div>
+                <div class="col s3 m3 right">
+                  <div class="col s8 m8 right-border right-align ">
+                    <a href="#!" class="options-text bluemix ">Audit Trial</a>
                   </div>
                   <div class="col s4 m4">
-                    <img src="images/Setting_Icon.png" class="responsive-img" /><img src="images/BlueArrow.png" class="responsive-img downarrow"
-                    />
+                    <img src="images/Setting_Icon.png" class="responsive-img" alt="">
                   </div>
+
                 </div>
               </div>
             </div>
-            <div class="flex-container square-holder">
-              <div class="square">1</div>
-              <div class="square">2</div>
-              <div class="square">3</div>
-              <div class="square">4</div>
-              <div class="square">5</div>
-              <div class="square">6</div>
-              <div class="square">7</div>
-              <div class="square">8</div>
-              <div class="square">9</div>
-              <div class="square">10</div>
-            </div>
-            <div class="flex-container square-holder">
-              <div class="square">11</div>
-              <div class="square">12</div>
-              <div class="square">13</div>
-              <div class="square">14</div>
-              <div class="square">15</div>
-              <div class="square">16</div>
-              <div class="square">17</div>
-              <div class="square">18</div>
-              <div class="square">19</div>
-              <div class="square">20</div>
-            </div>
-            <div class="flex-container square-holder">
-              <div class="square">24</div>
-              <div class="square">21</div>
-              <div class="square">26</div>
-              <div class="square">22</div>
-              <div class="square">23</div>
-              <div class="square">25</div>
-              <div class="square">27</div>
-              <div class="square">28</div>
-              <div class="square">29</div>
-              <div class="square">30</div>
-            </div>
-            <div class="flex-container square-holder">
-              <div class="square">31</div>
-              <div class="square">32</div>
-              <div class="square">33</div>
-              <div class="square">34</div>
-              <div class="square">35</div>
-              <div class="square">36</div>
-              <div class="square">37</div>
-              <div class="square">38</div>
-              <div class="square">39</div>
-              <div class="square">40</div>
-            </div>
           </div>
-        </div>
-        <div class="col s6 m6">
-          <div class="card-panel">
-            <div class="row">
-              <div class="col s7 m7">
-                <span class="study-visit"> ID: Test 001 </span>
+          <div class="col s12 m12">
+            <div class="card-panel pDetails">
+              <div class="row">
+                <span class="col s2 m2 ptitle">How is the pain in knee:</span>
+                <a href="#!" class="col s3 m3 options-text bluemix ">Reset Value</a>
               </div>
-              <div class="col s5 m5">
-                <div class="row">
-                  <div class="col s8 m8">
-                    <div class="input-field col s12 dropdown-holder">
-                      <select>
-                        <option value=""  selected>Log</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                      </select>
-                    </div>
+              <div class="row">
+                <div class="col s3 m3">
+                  <input class="with-gap" name="group1" type="radio" id="Severe" />
+                  <label for="Severe" class="checkbox-labels">Severe</label>
+                </div>
+                <div class="col s3 m3 ">
+                  <input class="with-gap" name="group1" type="radio" id="notsosevere" />
+                  <label for="notsosevere" class="checkbox-labels">Not So Severe</label>
+
+                </div>
+                <div class="col s3 m3 ">
+                  <input class="with-gap" name="group1" type="radio" id="nopain" />
+                  <label for="nopain" class="checkbox-labels">No Pain</label>
+
+                </div>
+                <div class="col s3 m3 right">
+                  <div class="col s8 m8 right-border right-align ">
+                    <a href="#!" class="options-text bluemix ">Audit Trial</a>
                   </div>
                   <div class="col s4 m4">
-                    <img src="images/Setting_Icon.png" class="responsive-img" /><img src="images/BlueArrow.png" class="responsive-img downarrow"
-                    />
+                    <img src="images/Setting_Icon.png" class="responsive-img" alt="">
                   </div>
+
                 </div>
               </div>
             </div>
-            <div class="flex-container square-holder">
-              <div class="square">1</div>
-              <div class="square">2</div>
-              <div class="square">3</div>
-              <div class="square">4</div>
-              <div class="square">5</div>
-              <div class="square">6</div>
-              <div class="square">7</div>
-              <div class="square">8</div>
-              <div class="square">9</div>
-              <div class="square">10</div>
-            </div>
-            <div class="flex-container square-holder">
-              <div class="square complete-review">11</div>
-              <div class="square complete-review">12</div>
-              <div class="square complete-review">13</div>
-              <div class="square complete-review">14</div>
-
-            </div>
           </div>
-        </div>
-        <div class="col s6 m6">
-          <div class="card-panel">
-            <div class="row">
-              <div class="col s7 m7">
-                <span class="study-visit"> ID: Test 001 </span>
+          <div class="col s12 m12">
+            <div class="card-panel pDetails">
+              <div class="row">
+                <span class="col s2 m2 ptitle">How is the pain in back:</span>
+                <a href="#!" class="col s3 m3 options-text bluemix ">Reset Value</a>
               </div>
-              <div class="col s5 m5">
-                <div class="row">
-                  <div class="col s8 m8">
-                    <div class="input-field col s12 dropdown-holder">
-                      <select>
-                        <option value=""  selected>Log</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                      </select>
-                    </div>
+              <div class="row">
+                <div class="col s3 m3">
+                  <input class="with-gap" name="group2" type="radio" id="Severeback" />
+                  <label for="Severeback" class="checkbox-labels">Severe</label>
+                </div>
+                <div class="col s3 m3 ">
+                  <input class="with-gap" name="group2" type="radio" id="notsosevereback" />
+                  <label for="notsosevereback" class="checkbox-labels">Not So Severe</label>
+
+                </div>
+                <div class="col s3 m3 ">
+                  <input class="with-gap" name="group2" type="radio" id="nopainback" />
+                  <label for="nopainback" class="checkbox-labels">No Pain</label>
+
+                </div>
+                <div class="col s3 m3 right">
+                  <div class="col s8 m8 right-border right-align ">
+                    <a href="#!" class="options-text bluemix ">Audit Trial</a>
                   </div>
                   <div class="col s4 m4">
-                    <img src="images/Setting_Icon.png" class="responsive-img" /><img src="images/BlueArrow.png" class="responsive-img downarrow"
-                    />
+                    <img src="images/Setting_Icon.png" class="responsive-img" alt="">
                   </div>
+
                 </div>
               </div>
             </div>
-            <div class="flex-container square-holder">
-              <div class="square data-lock">1</div>
-              <div class="square data-lock">2</div>
-              <div class="square data-lock">3</div>
-
-            </div>
-
           </div>
-        </div>
-        <div class="col s6 m6">
-          <div class="card-panel">
-            <div class="row">
-              <div class="col s7 m7">
-                <span class="study-visit"> ID: Test 001 </span>
+          <div class="col s12 m12">
+            <div class="card-panel pDetails">
+              <div class="row">
+                <span class="col s12 m12 ptitle">Height:</span>
               </div>
-              <div class="col s5 m5">
-                <div class="row">
-                  <div class="col s8 m8">
-                    <div class="input-field col s12 dropdown-holder">
-                      <select>
-                        <option value=""  selected>Log</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                      </select>
-                    </div>
+              <div class="row">
+                <div class="col s3 m3">
+                  <input type="text" placeholder="text" class="" />
+                </div>
+                <div class="col s3 m3 right">
+                  <div class="col s8 m8 right-border right-align ">
+                    <a href="#!" class="options-text bluemix ">Audit Trial</a>
                   </div>
                   <div class="col s4 m4">
-                    <img src="images/Setting_Icon.png" class="responsive-img" /><img src="images/BlueArrow.png" class="responsive-img downarrow"
-                    />
+                    <img src="images/Setting_Icon.png" class="responsive-img" alt="">
                   </div>
+
                 </div>
               </div>
             </div>
-            <div class="flex-container square-holder">
-              <div class="square stop">1</div>
-              <div class="square stop">2</div>
-              <div class="square stop">3</div>
-              <div class="square">4</div>
-              <div class="square">5</div>
-              <div class="square">6</div>
-              <div class="square">7</div>
-              <div class="square">8</div>
-              <div class="square">9</div>
-              <div class="square">10</div>
-            </div>
-
           </div>
         </div>
-        <div class="col s6 m6">
-          <div class="card-panel">
-            <div class="row">
-              <div class="col s7 m7">
-                <span class="study-visit"> ID: Test 001 </span>
-              </div>
-              <div class="col s5 m5">
-                <div class="row">
-                  <div class="col s8 m8">
-                    <div class="input-field col s12 dropdown-holder">
-                      <select>
-                        <option value=""  selected>Log</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col s4 m4">
-                    <img src="images/Setting_Icon.png" class="responsive-img" /><img src="images/BlueArrow.png" class="responsive-img downarrow"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="flex-container square-holder">
-              <div class="square progress-state">1</div>
-              <div class="square progress-state">2</div>
-              <div class="square">3</div>
-              <div class="square">4</div>
-              <div class="square">5</div>
-              <div class="square progress-state">6</div>
-              <div class="square progress-state">7</div>
-              <div class="square">8</div>
-              <div class="square">9</div>
 
-            </div>
-
-          </div>
-        </div>
-        <div class="col s6 m6">
-          <div class="card-panel">
-            <div class="row">
-              <div class="col s7 m7">
-                <span class="study-visit"> ID: Test 001 </span>
-              </div>
-              <div class="col s5 m5">
-                <div class="row">
-                  <div class="col s8 m8">
-                    <div class="input-field col s12 dropdown-holder">
-                      <select>
-                        <option value=""  selected>Log</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col s4 m4">
-                    <img src="images/Setting_Icon.png" class="responsive-img" /><img src="images/BlueArrow.png" class="responsive-img downarrow"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="flex-container square-holder">
-              <div class="square sign-off">1</div>
-              <div class="square sign-off">2</div>
-              <div class="square sign-off">3</div>
-              <div class="square sign-off">4</div>
-              <div class="square">5</div>
-              <div class="square">6</div>
-              <div class="square">7</div>
-              <div class="square">8</div>
-              <div class="square">9</div>
-              <div class="square">10</div>
-            </div>
-            <div class="flex-container square-holder">
-              <div class="square">11</div>
-
-            </div>
-
-          </div>
-        </div>
-        <div class="col s6 m6">
-          <div class="card-panel">
-            <div class="row">
-              <div class="col s7 m7">
-                <span class="study-visit"> ID: Test 001 </span>
-              </div>
-              <div class="col s5 m5">
-                <div class="row">
-                  <div class="col s8 m8">
-                    <div class="input-field col s12 dropdown-holder">
-                      <select>
-                        <option value=""  selected>Log</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col s4 m4">
-                    <img src="images/Setting_Icon.png" class="responsive-img" /><img src="images/BlueArrow.png" class="responsive-img downarrow"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="flex-container square-holder">
-              <div class="square">1</div>
-              <div class="square">2</div>
-              <div class="square">3</div>
-              <div class="square">4</div>
-              <div class="square">5</div>
-              <div class="square">6</div>
-              <div class="square">7</div>
-              <div class="square">8</div>
-              <div class="square">9</div>
-              <div class="square">10</div>
-            </div>
-            <div class="flex-container square-holder">
-              <div class="square">11</div>
-              <div class="square">12</div>
-              <div class="square">13</div>
-              <div class="square">14</div>
-              <div class="square">15</div>
-              <div class="square">16</div>
-              <div class="square">17</div>
-              <div class="square">18</div>
-              <div class="square">19</div>
-              <div class="square">20</div>
-            </div>
-            <div class="flex-container square-holder">
-              <div class="square">21</div>
-              <div class="square">22</div>
-              <div class="square">23</div>
-              <div class="square">24</div>
-              <div class="square">25</div>
-              <div class="square">26</div>
-              <div class="square">27</div>
-              <div class="square">28</div>
-              <div class="square">29</div>
-              <div class="square">30</div>
-            </div>
-
-          </div>
-        </div>
-        <div class="col s6 m6">
-          <div class="card-panel">
-            <div class="row">
-              <div class="col s7 m7">
-                <span class="study-visit"> ID: Test 001 </span>
-              </div>
-              <div class="col s5 m5">
-                <div class="row">
-                  <div class="col s8 m8">
-                    <div class="input-field col s12 dropdown-holder">
-                      <select>
-                        <option value=""  selected>Log</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col s4 m4">
-                    <img src="images/Setting_Icon.png" class="responsive-img" /><img src="images/BlueArrow.png" class="responsive-img downarrow"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="flex-container square-holder">
-              <div class="square">1</div>
-              <div class="square">2</div>
-              <div class="square">3</div>
-              <div class="square">4</div>
-              <div class="square">5</div>
-              <div class="square open-issue">6</div>
-              <div class="square open-issue">7</div>
-              <div class="square open-issue">8</div>
-
-            </div>
-
-
-          </div>
-        </div>
       </div>
 
     </div>
@@ -781,8 +423,9 @@
   <script type="text/javascript" src="js/jquery.autocomplete.js"></script>
 
   <script type="text/javascript" src="js/common.js"></script>
-  <script type="text/javascript" src="js/datatable.js"></script>
+  <script type="text/javascript" src="js/iscroll.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/datepicker.standalone.js" charset="utf-8"></script>
   <script>
     var countries = [
       { value: 'Demo 1.6', data: 'AD' },
@@ -798,6 +441,28 @@
 
       }
     });  
+    var myScroll;
+
+
+	myScroll = new IScroll('#wrapper', {
+		scrollbars: true,
+		mouseWheel: true,
+		interactiveScrollbars: true,
+		shrinkScrollbars: 'scale',
+		fadeScrollbars: true
+	});
+
+  var picker = new MaterialDatePicker({})
+      .on('submit',function(d){
+        output.innerText = d;
+      });
+
+    var el = document.querySelector('.c-datepicker-btn');
+    el.addEventListener('click', function() {
+      picker.open();
+    }, false);
+
+
   </script>
 </body>
 

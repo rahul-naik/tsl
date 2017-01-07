@@ -303,6 +303,15 @@ ul.side-nav .collapsible-body li a {
     position: absolute;
     border-bottom: 1px solid #cfcfcf;
 }
+
+.dummyDiv.offset-top{
+        top: 92px;
+}
+.offset-breadcrumb{
+    height:28px;
+    background: #f5f5f5;
+    border:none;
+}
 #collapseSideBar {
     display: block;
     margin: 0 auto;
@@ -798,7 +807,7 @@ span.stop,div.stop{
     background: #e57373;
     border:none;
 }
-.card-panel{
+.study-cards .card-panel{
     min-height:215px;
 }
 
@@ -849,6 +858,96 @@ div.test-study-options.row div.input-field{
 div.export-options{
     padding:10px 13px;
 }
+.pDetails input[type="text"]{
+    margin:0;
+    border-bottom: 1px solid #b4bfc5;
+    height: 30px;
+}
+.pDetails .ptitle{
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+.right-border{
+    border-right:2px solid #e0e0e0;
+}
+.pDetails .checkbox-labels{
+
+}
+.scrollContent{
+    overflow-y: scroll;
+    max-height:600px;
+}
+#scroller {
+	position: absolute;
+	z-index: 1;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	width: 100%;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	text-size-adjust: none;
+}
+#wrapper {
+	position: relative;
+	z-index: 1;
+	
+	width: 100%;
+    height:600px;
+	overflow: hidden;
+    max-height:600px;
+}
+/*Datepicker style*/
+.c-btn {
+      font-size: 14px;
+      text-transform: capitalize;
+      font-weight: 600;
+      display: inline-block;
+      line-height: 36px;
+      cursor: pointer;
+      text-align: center;
+      text-transform: uppercase;
+      min-width: 88px;
+      height: 36px;
+      margin: 10px 8px;
+      padding: 0 8px;
+      text-align: center;
+      letter-spacing: .5px;
+      border-radius: 2px;
+      background: #F1F1F1;
+      color: #393939;
+      transition: background 200ms ease-in-out;
+      box-shadow: 0 3.08696px 5.82609px 0 rgba(0, 0, 0, 0.16174), 0 3.65217px 12.91304px 0 rgba(0, 0, 0, 0.12435);
+    }
+
+    .c-btn--flat {
+      background: transparent;
+      margin: 10px 8px;
+      min-width: 52px;
+    }
+
+    .c-btn:hover {
+      background: rgba(153, 153, 153, 0.2);
+      color: #393939;
+    }
+
+    .c-btn:active {
+      box-shadow: 0 9.6087px 10.78261px 0 rgba(0, 0, 0, 0.17217), 0 13.56522px 30.3913px 0 rgba(0, 0, 0, 0.15043);
+    }
+
+    .c-btn--flat, .c-btn--flat:hover, .c-btn--flat:active {
+      box-shadow: none;
+    }
 /**override Media queries tablet**/
 
 @media only screen and (max-width: 992px){
