@@ -45,7 +45,7 @@ span.user-role {
 .side-bar a {
     color: #90a4ae;
     font-weight: 300;
-    padding: 0 21px;
+    padding: 0 16px;
 }
 .side-bar li:hover > a,
 #slide-out > li.active > a {
@@ -109,8 +109,9 @@ span.user-role {
     border-radius: 50%;
     margin: 0 32px 0 0;
 }
-.content-subheader {
+div.content-subheader {
     padding: 20px 0;
+        margin: 0 !important;
 }
 .activity-current {
     font-size: 16px;
@@ -292,9 +293,8 @@ ul.side-nav ul > li > a.collapsible-header {
 }
 ul.side-nav .collapsible-body li a {
     padding-left: 60px;
-    line-height: 36px;
-    height: 35px;
-    margin-top: 5px;
+    line-height: 32px;
+    height: 30px;
 }
 .dummyDiv {
     height: 48px;
@@ -335,11 +335,11 @@ footer {
 }
 .sidebar-not-collapsed .side-nav li.drpdn,
 .display-over .side-nav li.drpdn {
-    background: url('../images/SubmenuArrow_Normal.png') no-repeat 90% center;
+    background: url('../images/SubmenuArrow_Normal.png') no-repeat 92% center;
 }
 .sidebar-not-collapsed .side-nav li.drpdn:hover,
 .display-over .side-nav li.drpdn:hover {
-    background: url('../images/SubmenuArrow_Clicked.png') no-repeat 90% center;
+    background: url('../images/SubmenuArrow_Clicked.png') no-repeat 92% center;
 }
 #slide-out > li.active {
     background: #2979ff url('../images/SubmenuArrow_down.png') no-repeat 90% 22px;
@@ -410,7 +410,7 @@ footer {
     font-size: 14px;
 }
 .space-drop {
-    padding: 10px 0;
+    padding: 20px 0;
     border-bottom: 1px dashed #c8c8c8;
 }
 .export-text {
@@ -482,7 +482,7 @@ div.query-wrapper i {
 input.colour {
     border-bottom: 1px solid #b4bfc5;
     padding-left: 10px;
-    height: 30px;
+    height: 31px;
 }
 input[type=text].colour:focus {
     border-bottom: 1px solid #b4bfc5;
@@ -552,7 +552,7 @@ input.colour {
     position: absolute;
 }
 div.select-wrapper input.select-dropdown {
-    height: 30px;
+    height: 31px;
 }
 .pagination-div {
     padding-top: 10px;
@@ -747,8 +747,8 @@ div.sub-wrapper i {
 
 .card-panel input.select-dropdown{margin:0}
 .study-visit{font-size:16px;font-weight: 500;}
-.square{height:16px;width:16px;border:1px solid #757575;font-size: 10px;text-align:center;color:#263238;margin:0 15px;}
-.square a{color: #263238;display:block;}
+.square{height: 22px;width: 22px;border:1px solid #757575;font-size: 10px;text-align:center;color:#263238;margin: 0 12px;display: flex;}
+.square a{color: #263238;display: inline-block;vertical-align: middle;align-self: center;width: 100%;}
 .square-holder{padding-top:20px;}
 .square-holder div:first-child{margin-left:0;}
 .square-holder div:last-child{margin-right:0;}
@@ -809,7 +809,7 @@ span.stop,div.stop{
     border:none;
 }
 .study-cards .card-panel{
-    min-height:215px;
+    min-height: 240px;
 }
 
 .breadcrumb_holder{
@@ -838,12 +838,24 @@ div.study-cards .select-wrapper input.select-dropdown{
 div.study-cards .select-wrapper span.caret{
     color:#5494ff;
 }
-div.test-study-options{
-    padding:20px 0;
+
+div.test-study-options > .col{
+    padding:0;
 }
 div.test-study-options input.select-dropdown{
     margin: 0;
     border-bottom: none;
+    font-size: 12px;
+}
+div.test-study-options input.select-dropdown + ul li span{
+    font-size: 12px;
+}
+.select-wrapper span.caret{
+    color:#5494ff
+}
+.test-study-options{
+    padding:0 0 10px 0;
+    border-bottom:2px solid #dcdcdc;
 }
 div.test-study-options.row div.input-field{
     margin:0;
@@ -871,8 +883,9 @@ div.export-options{
 .right-border{
     border-right:2px solid #e0e0e0;
 }
-.pDetails .checkbox-labels{
-
+.sTitle{
+    font-size: 12px;
+        margin-top: 10px;
 }
 .scrollContent{
     overflow-y: scroll;
@@ -902,8 +915,6 @@ div.export-options{
 #wrapper {
 	position: relative;
 	z-index: 1;
-	
-	width: 100%;
     height:600px;
 	overflow: hidden;
     max-height:600px;
@@ -948,6 +959,18 @@ div.export-options{
 
     .c-btn--flat, .c-btn--flat:hover, .c-btn--flat:active {
       box-shadow: none;
+    }
+    table thead th {
+        font-size: 10px;
+        opacity: 0.54;
+        font-weight: 500;
+    }
+
+    .section-container{
+        padding-top:10px;
+    }
+    #setting1{
+        width:170px !important;
     }
 /**override Media queries tablet**/
 
