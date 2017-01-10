@@ -1,354 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
-  <!--Import Google Icon Font-->
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" />
-  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--Import materialize.css-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Clindox Templates</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="css/materialize.min.css" />
+    <link rel="stylesheet" href="css/core.css" />
 
-  <link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
-  <link type="text/css" rel="stylesheet" href="css/style.css" />
-
-  <!--Let browser know website is optimized for mobile-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 </head>
 
 <body>
-  <div class="navbar-fixed">
-    <nav class=" lighten-custom" role="navigation">
-      <div class="nav-wrapper container">
-        <a id="logo-container" href="#" class="brand-logo valign-wrapper"><img class="responsive-img" src="images/Logo.png" /></a>
-        <ul class="right">
-          <li class="head-nav"><a href="#" class="center-align header-icon waves-effect waves-block waves-light"><i class="material-icons">email</i>
-          <span class="bs-badge badge-absolute bg-red">2</span>
-          </a></li>
-          <li class="head-nav">
-            <a href="#" class="center-align header-icon waves-effect waves-block waves-light"><img class="responsive-img" src="images/Help_Icon.png"></a>
-          </li>
-
-          <li class="userDetails valign-wrapper">
-            <a href="#" class="left waves-effect waves-block waves-light admin-holder dropdown-button" data-beloworigin="true" data-activates='dropdown1'>
-              <img class="responsive-img left" src="images/User_Icon.png">
-              <div class="left user-data">
-                <span class="user-name">Shibu - Telsa </span>
-                <span class="user-role">Administrator</span>
-              </div>
-              <img class="right responsive-img dropImage" src="images/drop.png" />
-            </a>
-            <ul id='dropdown1' class='dropdown-content'>
-              <li class="space-drop">
-                <label class="drpdown-label">Profile View</label>
-                <div class="input-field col s12 dropdown-holder">
-                  <select>
-                  <option value="" selected>Investigator</option>
-                  <option value="1">Option 1</option>
-                  <option value="2">Option 2</option>
-                  <option value="3">Option 3</option>
-                </select>
-                  <span class="notf">change value to switch profile</span>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12">
+                <div class="page-header">
+                    <h2>Clindox Template's</h2>
+                   
                 </div>
-              </li>
-
-              <li class="space-drop">
-                <label class="drpdown-label">Dashboard View</label>
-                <div class="input-field col s12 dropdown-holder">
-                  <select>
-                  <option value=""  selected>Main Dashboard</option>
-                  <option value="1">Option 1</option>
-                  <option value="2">Option 2</option>
-                  <option value="3">Option 3</option>
-                </select>
-                  <span class="notf">change value to switch dashboard</span>
-                </div>
-              </li>
-              <li><a class="settings_icon" href="#!">Settings</a></li>
-              <li><a class="release_note" href="#!">Release Note</a></li>
-              <li><a class="matrix" href="#!">User capablity Matrix</a></li>
-              <li><a class="sign-out" href="#!">Sign out</a></li>
-            </ul>
-          </li>
-        </ul>
-
-       
-      </div>
-    </nav>
-  </div>
-  <div class="dummyDiv">
-
-  </div>
-  <div class="container overflow-container flex-container">
-    <!-- START LEFT SIDEBAR NAV-->
-    <div id="left-sidebar-nav" class="left sidebar-not-collapsed">
-
-      <ul id="slide-out" class="side-bar side-nav leftside-navigation collapsible collapsible-accordion">
-
-        <li class="bold " id="colapseOnHover">
-          <a href="#" class="waves-effect valign-wrapper waves-cyan right-align"><img id="collapseSideBar" class="responsive-img" src="images/CollapseArrow.png" /></a>
-        </li>
-        <li class="bold  dashboard drpdn">
-          <a href="#" class="waves-effect waves-cyan "> Dashboard</a>
-        </li>
-        <li class="bold  study drpdn">
+            </div>
+        </div>
 
 
-          <a href="#" class="collapsible-header waves-effect waves-cyan "> Study Users & Preferences</a>
-          <div class="collapsible-body">
-            <ul>
-              <li><a href="#!">Roles</a></li>
-              <li><a href="#!">Users</a></li>
-              <li><a href="#!">Units</a></li>
-              <li><a href="#!">Location</a></li>
-              <li><a href="#!">Study types</a></li>
-              <li><a href="#!">Email template</a></li>
-              <li><a href="#!">Default settings</a></li>
-              <li><a href="#!">Password policy</a></li>
-            </ul>
-          </div>
+        <div class="row">
+            <div class="col s4 m4">
 
+                <h4>Main Pages</h4>
 
-        </li>
-        <li class="bold  manage-study drpdn">
+                <ol>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="queryList.html">Query List</a></li>
+                    <li><a href="companySettings.html">Company Settings</a></li>
+                    <li><a href="Study.html">Study</a></li>
+                    <li><a href="study-details.html">Study Details</a></li>
+                </ol>
 
-          <a href="#" class="collapsible-header waves-effect waves-cyan "> Manage Studies</a>
-          <div class="collapsible-body">
-            <ul>
-              <li><a href="#!">Create Study</a></li>
-              <li><a href="#!">Study Design</a></li>
-              <li><a href="#!">Input data to study</a></li>
-            </ul>
-          </div>
-
-
-        </li>
-        <li class="bold  library drpdn">
-          <a href="#" class="waves-effect waves-cyan "> Library</a>
-        </li>
-        <li class="bold  query drpdn">
-          <a href="queryList.html" class="waves-effect waves-cyan "> Query List</a>
-        </li>
-        <li class="bold  reports drpdn">
-          <a href="#" class="waves-effect waves-cyan "> Reports</a>
-        </li>
-      </ul>
-      
+            </div>
+        </div>
     </div>
-
-
-    <div class="main-container">
-      <div class="row section-header">
-        <div class="col m3">
-          <div class="left dashboard-text">Dashboard</div>
-        </div>
-        <div class="col m9">
-
-          <div class="right">
-            <a href="#" class="button-collapse dropdown-button" data-alignment="right" data-beloworigin="true" data-activates='dropdown2'><img src="images/Hamburger_Icon.png" class="responsive-img" /></a>
-            <ul id='dropdown2' class='dropdown-content'>
-              <li><a href="#!" class="Create_study">Create Study</a></li>
-              <li><a href="#!" class="manage_study">Manage Study</a></li>
-              <li><a href="#!" class="study_design">Study Design</a></li>
-              <li><a href="#!" class="monitor_data">Monitor / Input Data</a></li>
-              <li><a href="#!" class="manage_user">Manage User</a></li>
-              <li><a href="#!" class="view_list">View Query List</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!--   Icon Section   -->
-      <div class="row content-subheader">
-        <div class="col s6 m6">
-          <span class="activity-current">Latest Activity</span>
-        </div>
-
-        <div class="col s6 m6 right-align">
-          <span class="view-all-activities"><a href="#">View All the latest activities</a></span>
-        </div>
-      </div>
-      
-      <div class="row">
-        <div class="carousel-wrapper">
-          <div id="owl-demo" class="owl-carousel owl-theme">
-            <div class="card">
-              <div class="card-image visit">
-
-                <span class="card-title">Visit Submit For Sign Off</span>
-              </div>
-              <div class="card-content">
-                <p>Thursday, 10 Nov 2016</p>
-                <span class="card-text">Lorem Ipsum Lorem</span>
-                <span class="">Lorem Ipsum Lorem</span>
-                <span class="">Lorem Ipsum Lorem</span>
-              </div>
-
-            </div>
-            <div class="card">
-              <div class="card-image publish">
-
-                <span class="card-title">Study Published</span>
-              </div>
-              <div class="card-content">
-                <p>Thursday, 10 Nov 2016</p>
-                <span class="card-text">Lorem Ipsum Lorem</span>
-                <span class="">Lorem Ipsum Lorem</span>
-                <span class="">Lorem Ipsum Lorem</span>
-              </div>
-
-            </div>
-            <div class="card">
-              <div class="card-image visit">
-
-                <span class="card-title">Visit Submit For Sign Off</span>
-              </div>
-              <div class="card-content">
-                <p>Thursday, 10 Nov 2016</p>
-                <span class="card-text">Lorem Ipsum Lorem</span>
-                <span class="">Lorem Ipsum Lorem</span>
-                <span class="">Lorem Ipsum Lorem</span>
-              </div>
-
-            </div>
-            <div class="card">
-              <div class="card-image publish">
-
-                <span class="card-title">Study Published</span>
-              </div>
-              <div class="card-content">
-                <p>Thursday, 10 Nov 2016</p>
-                <span class="card-text">Lorem Ipsum Lorem</span>
-                <span class="">Lorem Ipsum Lorem</span>
-                <span class="">Lorem Ipsum Lorem</span>
-              </div>
-
-            </div>
-            <div class="card">
-              <div class="card-image visit">
-
-                <span class="card-title">Visit Submit For Sign Off</span>
-              </div>
-              <div class="card-content">
-                <p>Thursday, 10 Nov 2016</p>
-                <span class="card-text">Lorem Ipsum Lorem</span>
-                <span class="">Lorem Ipsum Lorem</span>
-                <span class="">Lorem Ipsum Lorem</span>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="owl-controls clickable">
-          <div class="owl-pagination">
-            <div class="owl-page"><span class=""></span></div>
-            <div class="owl-page active"><span class=""></span></div>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="row">
-        <div class="col m12">
-          <div class="card table-card">
-            <div class="row content-subheader">
-              <div class="col s6 m6">
-                <span class="activity-current">Recently Used Studies</span>
-              </div>
-
-              <div class="col s6 m6 right-align">
-                <span class="view-all-activities"><a href="#">View All Studies</a></span>
-              </div>
-            </div>
-            <table class="bordered">
-              <thead>
-                <tr>
-                  <th data-field="id">Study ID</th>
-                  <th data-field="name">Study Title</th>
-                  <th data-field="price">Study State</th>
-                  <th data-field="price">Action</th>
-                </tr>
-              </thead>
-
-              <tbody>
-                <tr>
-                  <td>test 1.6</td>
-                  <td>test study 1.6</td>
-                  <td style="color:#dd5b33">Draft</td>
-                  <td><img src="images/Setting_Icon.png" class="responsive-img" /><img src="images/BlueArrow.png" class="responsive-img downarrow"
-                    /></td>
-                </tr>
-                <tr>
-                  <td>test 1.6</td>
-                  <td>test study 1.6</td>
-                  <td style="color:#21cf69">Published</td>
-                  <td><img src="images/Setting_Icon.png" class="responsive-img" /><img src="images/BlueArrow.png" class="responsive-img downarrow"
-                    /></td>
-                </tr>
-                <tr>
-                  <td>test 1.6</td>
-                  <td>test study 1.6</td>
-                  <td style="color:#dd5b33">Draft</td>
-                  <td><img src="images/Setting_Icon.png" class="responsive-img" /><img src="images/BlueArrow.png" class="responsive-img downarrow"
-                    /></td>
-                </tr>
-                <tr>
-                  <td>test 1.6</td>
-                  <td>test study 1.6</td>
-                  <td style="color:#dd5b33">Draft</td>
-                  <td><img src="images/Setting_Icon.png" class="responsive-img" /><img src="images/BlueArrow.png" class="responsive-img downarrow"
-                    /></td>
-                </tr>
-                <tr>
-                  <td>test 1.6</td>
-                  <td>test study 1.6</td>
-                  <td style="color:#dd5b33">Draft</td>
-                  <td><img src="images/Setting_Icon.png" class="responsive-img" /><img src="images/BlueArrow.png" class="responsive-img downarrow"
-                    /></td>
-                </tr>
-                <tr>
-                  <td>test 1.6</td>
-                  <td>test study 1.6</td>
-                  <td style="color:#dd5b33">Draft</td>
-                  <td><img src="images/Setting_Icon.png" class="responsive-img" /><img src="images/BlueArrow.png" class="responsive-img downarrow"
-                    /></td>
-                </tr>
-                <tr>
-                  <td>test 1.6</td>
-                  <td>test study 1.6</td>
-                  <td style="color:#dd5b33">Draft</td>
-                  <td><img src="images/Setting_Icon.png" class="responsive-img" /><img src="images/BlueArrow.png" class="responsive-img downarrow"
-                    /></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-    <!-- END LEFT SIDEBAR NAV-->
-
-  </div>
-
-  <footer class="page-footer">
-    <div class="footer-copyright">
-      <div class="container">
-        &copy; 2016 Clindox. Build Version 1.6
-
-      </div>
-    </div>
-  </footer>
-
-  <div id="dummy"></div>
-  <!--Import jQuery before materialize.js-->
-  <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-  <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-  <script type="text/javascript" src="js/carousel.js"></script>
-  <script type="text/javascript" src="js/common.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
-
-</html>
