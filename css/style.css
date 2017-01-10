@@ -1,3 +1,11 @@
+.vAlign {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+}
 .lighten-custom {
     background-color: #5494ff;
 }
@@ -564,6 +572,10 @@ div.select-wrapper input.select-dropdown {
 .arrows {
     padding: 5px;
     cursor: pointer;
+    display: inline-block;
+}
+.arrows img {
+    vertical-align: middle;
 }
 #dropdown2 li a.Create_study {
     background: url('../images/CreateStudy_Normal.png') no-repeat 17px center;
