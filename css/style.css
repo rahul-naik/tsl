@@ -984,6 +984,12 @@ div.export-options{
     #setting1{
         width:170px !important;
     }
+    .subject-visit ul, .study-logs ul {
+        width:200px !important; 
+    }
+    .checkbox-holder > div{
+        margin: 5px 0;
+    }
 /**override Media queries tablet**/
 
 @media only screen and (max-width: 992px){
