@@ -990,6 +990,30 @@ div.export-options{
     .checkbox-holder > div{
         margin: 5px 0;
     }
+    .event-log label{
+        color:#000;
+    }
+
+    .event-log{
+        padding-bottom:20px;
+    }
+
+    .bottom-margin{
+        margin-bottom: 20px;
+    }
+
+    div#range {
+        display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: space-between;
+    margin-right:20px;
+    height:150px;
+    }
+
+    .mb{
+        margin-bottom: 20px;
+    }
 /**override Media queries tablet**/
 
 @media only screen and (max-width: 992px){
