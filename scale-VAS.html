@@ -133,8 +133,24 @@
         <li class="bold  query drpdn">
           <a href="queryList.html" class="waves-effect waves-cyan "> Query List</a>
         </li>
-        <li class="bold  reports drpdn">
-          <a href="#" class="waves-effect waves-cyan "> Reports</a>
+        <li class="bold reports drpdn">
+          <a href="#" class="collapsible-header waves-effect waves-cyan "> Reports</a>
+          <div class="collapsible-body">
+            <ul class="collapsible collapsible-accordion">
+              <li class="drpdn active-drpdown">
+                <a href="#!" class="collapsible-header waves-effect waves-cyan second-lvl-dropdown">ODM Reports</a>
+                <div class="collapsible-body">
+                  <ul class="second-lvl-ul">
+                    <li><a href="#!">Raise Request</a></li>
+                    <li><a href="#!">Request List</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#!">SAS Reporting</a></li>
+              <li><a href="#!">Excel Reporting</a></li>
+              <li><a href="#!">Graphs</a></li>
+            </ul>
+          </div>
         </li>
       </ul>
 
@@ -379,7 +395,7 @@
 
 
 <!--Import jQuery before materialize.js-->
- <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
 
 <script type="text/javascript" src="js/common.js"></script>
 <script type="text/javascript" src="js/iscroll.js"></script>
@@ -392,9 +408,8 @@
 
 
 
-    $('.datepicker').pickadate({
-      selectMonths: true, // Creates a dropdown to control month
-      selectYears: 15 // Creates a dropdown of 15 years to control year
+    $('.datepicker').pickad C   dropdown to control month
+      selectYears: 15 // Creates a dropdown of 15 y to contr
     });
 
     var nonLinearSlider = document.getElementById('nonlinear');
@@ -423,7 +438,7 @@
         'max': 100
       }
     });
-  </script>
+</script>
 </body>
 
 </html>

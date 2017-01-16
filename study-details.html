@@ -9,7 +9,7 @@
   <!--Import materialize.css-->
 
   <link type="text/css" rel="stylesheet" href="css/style.css" />
-  
+
   <link type="text/css" rel="stylesheet" href="css/bootstrap-material-datetimepicker.css" />
   <!--<link type="text/css" rel="stylesheet" href="css/jquery.dataTables.min.css" />-->
 
@@ -134,8 +134,24 @@
         <li class="bold  query drpdn">
           <a href="queryList.html" class="waves-effect waves-cyan "> Query List</a>
         </li>
-        <li class="bold  reports drpdn">
-          <a href="#" class="waves-effect waves-cyan "> Reports</a>
+        <li class="bold reports drpdn">
+          <a href="#" class="collapsible-header waves-effect waves-cyan "> Reports</a>
+          <div class="collapsible-body">
+            <ul class="collapsible collapsible-accordion">
+              <li class="drpdn active-drpdown">
+                <a href="#!" class="collapsible-header waves-effect waves-cyan second-lvl-dropdown">ODM Reports</a>
+                <div class="collapsible-body">
+                  <ul class="second-lvl-ul">
+                    <li><a href="#!">Raise Request</a></li>
+                    <li><a href="#!">Request List</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#!">SAS Reporting</a></li>
+              <li><a href="#!">Excel Reporting</a></li>
+              <li><a href="#!">Graphs</a></li>
+            </ul>
+          </div>
         </li>
       </ul>
 

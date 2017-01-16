@@ -242,11 +242,12 @@ img.responsive-img {
 #slide-out > li:hover {
     background-color: #2979ff;
 }
-.side-nav .dashboard a {
+.side-nav .dashboard > a {
     background: url(../images/Dashboard_Normal.png) no-repeat 21px center;
     padding-left: 61px;
 }
-.side-nav .dashboard:hover a {
+.side-nav .dashboard:hover > a,
+.side-nav .dashboard.active > a {
     background: url(../images/Dashboard_Clicked.png) no-repeat 21px center;
 }
 .side-nav .study > a {
@@ -269,25 +270,28 @@ ul.side-nav ul > li > a.collapsible-header {
 .side-nav .manage-study.active > a {
     background: url(../images/ManageStudy_Clicked.png) no-repeat 21px center;
 }
-.side-nav .library a {
+.side-nav .library > a {
     background: url(../images/Library_Normal.png) no-repeat 21px center;
     padding-left: 61px;
 }
-.side-nav .library:hover a {
+.side-nav .library:hover > a,
+.side-nav .library.active > a {
     background: url(../images/Library_Clicked.png) no-repeat 21px center;
 }
-.side-nav .query a {
+.side-nav .query > a {
     background: url(../images/Querylist_Normal.png) no-repeat 21px center;
     padding-left: 61px;
 }
-.side-nav .query:hover a {
+.side-nav .query:hover > a,
+.side-nav .query.active > a {
     background: url(../images/Querylist_Clicked.png) no-repeat 21px center;
 }
-.side-nav .reports a {
+.side-nav .reports > a {
     background: url(../images/Reports_Normal.png) no-repeat 21px center;
     padding-left: 61px;
 }
-.side-nav .reports:hover a {
+.side-nav .reports:hover > a,
+.side-nav .reports.active > a {
     background: url(../images/Reports_Clicked.png) no-repeat 21px center;
 }
 .side-nav .collapsible-body {
@@ -304,6 +308,18 @@ ul.side-nav .collapsible-body li a {
     line-height: 32px;
     height: 30px;
 }
+
+/*Second level dropdown css*/
+a.second-lvl-dropdown{
+    height: 30px !important;
+    min-height: 30px !important;
+}
+
+ul.second-lvl-ul li a{
+    padding-left: 70px !important;
+}
+
+
 .dummyDiv {
     height: 48px;
     width: 100%;
@@ -349,8 +365,16 @@ footer {
 .display-over .side-nav li.drpdn:hover {
     background: url('../images/SubmenuArrow_Clicked.png') no-repeat 92% center;
 }
+.sidebar-not-collapsed .side-nav li.drpdn.active-drpdown:hover,
+.display-over .side-nav li.drpdn.active-drpdown:hover {
+    background:#172024 url('../images/SubmenuArrow_Clicked.png') no-repeat 92% center;
+}
 #slide-out > li.active {
-    background: #2979ff url('../images/SubmenuArrow_down.png') no-repeat 90% 22px;
+    background: #2979ff url('../images/SubmenuArrow_down.png') no-repeat 92% 22px;
+}
+
+#slide-out  li.active.active-drpdown {
+    background: #172024 url('../images/SubmenuArrow_down.png') no-repeat 92% 12px;
 }
 .small-line {
     /*line-height: 17px !important;*/
