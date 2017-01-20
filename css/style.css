@@ -525,7 +525,7 @@ input[type=text].autocomplete:focus {
     border-bottom: 1px solid #9e9e9e;
 }
 input[type=text].autocomplete {
-    padding-left: 34px;
+    padding-left: 34px !important;
 }
 [type="checkbox"].filled-in:checked+label:after,
 [type="radio"].with-gap:checked+label:after {
@@ -771,7 +771,7 @@ div.sub-wrapper i {
 .sub-wrapper input{
     height: 28px;
     width: 200px;
-    padding-left: 30px;
+    padding-left: 30px !important;
     margin:0;
 }
 .options-text{
