@@ -10,6 +10,7 @@
 
   <link type="text/css" rel="stylesheet" href="css/style.css" />
 
+
   <link type="text/css" rel="stylesheet" href="css/bootstrap-material-datetimepicker.css" />
   <!--<link type="text/css" rel="stylesheet" href="css/jquery.dataTables.min.css" />-->
 
@@ -192,7 +193,7 @@
               <div class="count">
                 1
               </div>
-              <div>
+              <div class="breadcrumb-title">
                 Main Details
               </div>
             </a>
@@ -202,7 +203,7 @@
               <div class="count">
                 2
               </div>
-              <div>
+              <div class="breadcrumb-title">
                 Design Visits
               </div>
             </a>
@@ -212,7 +213,7 @@
               <div class="count">
                 3
               </div>
-              <div>
+              <div class="breadcrumb-title">
                 Add Study Logs
               </div>
             </a>
@@ -222,7 +223,7 @@
               <div class="count">
                 4
               </div>
-              <div>
+              <div class="breadcrumb-title">
                 Add Validations
               </div>
             </a>
@@ -237,13 +238,47 @@
             <div class="row section-container row-border-bottom">
               <div class="col s3 m3">
                 <div class="row setting-cards">
-                  <div class="col s6 m6 sTitle">Change Section:</div>
-                  <div class="col s4 m4 ">
-                    <select>
-                      <option value="" selected>S1</option>
-                      <option value="1">S2</option>
-                      <option value="2">S3</option>
-                    </select>
+                  <div class="col s7 m7 sTitle-14">Visits Added: 5</div>
+                  <div class="col s3 m3 dropdown">
+                    <a href="#!" role="button" data-toggle="dropdown" class="openDropDown"><img src="images/BlueArrow.png" class="responsive-img downarrow" /></a>
+                    <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                      <li class="dropdown-submenu"><a href="#">Koos</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">2rd level</a></li>
+                          <li><a href="#">2rd level</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu"><a href="#">Visit 1</a>
+                       <ul class="dropdown-menu">
+                          <li><a tabindex="-1" href="#">Second level</a></li>
+                          <li><a href="#">Second level</a></li>
+                          <li><a href="#">Second level</a></li>
+                        </ul></li>
+                      <li class="dropdown-submenu">
+                        <a tabindex="-1" href="#">Visit 2</a>
+                        <ul class="dropdown-menu">
+                          <li><a tabindex="-1" href="#">Second level</a></li>
+                          <li><a href="#">Second level</a></li>
+                          <li><a href="#">Second level</a></li>
+                        </ul>
+                      </li>
+                       <li class="dropdown-submenu">
+                        <a tabindex="-1" href="#">Visit 3</a>
+                        <ul class="dropdown-menu">
+                          <li><a tabindex="-1" href="#">Second level</a></li>
+                          <li><a href="#">Second level</a></li>
+                          <li><a href="#">Second level</a></li>
+                        </ul>
+                      </li>
+                       <li class="dropdown-submenu">
+                        <a tabindex="-1" href="#">Visit 4</a>
+                        <ul class="dropdown-menu">
+                          <li><a tabindex="-1" href="#">Second level</a></li>
+                          <li><a href="#">Second level</a></li>
+                          <li><a href="#">Second level</a></li>
+                        </ul>
+                      </li>
+                    </ul>
                   </div>
 
                 </div>
@@ -261,7 +296,7 @@
             </div>
             <div class="row section-container">
               <div class="col s3 m3 sTitle-14">
-                Koovs – V1– S1
+                Koos – V1– S1
               </div>
               <div class="col s2 m2">
                 <span class="options-text"><a href="#" class="bluemix">Create New Question</a></span>
@@ -270,8 +305,8 @@
                 <span class="options-text"><a href="#" class="bluemix">Select From Question Bank</a></span>
               </div>
               <div class="col s4 m4 right-align">
-                <a href=""><img src="images/EditIcon.png" class="responsive-img" /></a>
-                <a href="" class="mLeft"><img src="images/delete.png" class="responsive-img" /></a>
+                <a href="#!"><img src="images/EditIcon.png" class="responsive-img" /></a>
+                <a href="#!" class="mLeft"><img src="images/delete.png" class="responsive-img" /></a>
               </div>
             </div>
           </div>
@@ -285,8 +320,8 @@
                 <div class="col s10 m10 ptitle">Weight:</div>
                 <div class="col s2 m2 right-align">
 
-                  <a href=""><img src="images/Setting_Icon.png" class="responsive-img"></a>
-                  <a href=""><img src="images/BlueArrow.png" class="responsive-img downarrow"></a>
+                  <a href="#!"><img src="images/Setting_Icon.png" class="responsive-img"></a>
+                  <a href="#!"><img src="images/BlueArrow.png" class="responsive-img downarrow"></a>
 
 
                 </div>
@@ -294,10 +329,10 @@
               <div class="row">
                 <div class="col s8 m8">
                   <div class="col s5 m5">
-                    <input type="text" placeholder="text" class="error-border" />
+                    <input type="text" placeholder="text" class="" />
                   </div>
                   <div class="col s7 m7">
-                    <span class="validation-error">Weight should be in digits only. eg 50kg</span>
+                    <!-- Placeholder for error-->
                   </div>
                 </div>
 
@@ -306,8 +341,8 @@
           </div>
           <div class="col s1 m1">
             <div class="row-flex">
-              <a href=""><img src="images/upwards.png" class="responsive-img" /></a>
-              <a href=""><img src="images/downwards.png" class="responsive-img" /></a>
+              <a href="#!"><img src="images/upwards.png" class="responsive-img" /></a>
+              <a href="#!"><img src="images/downwards.png" class="responsive-img" /></a>
             </div>
           </div>
           <div class="col s11 m11">
@@ -316,8 +351,8 @@
                 <div class="col s10 m10 ptitle">BP:</div>
                 <div class="col s2 m2 right-align">
 
-                  <a href=""><img src="images/Setting_Icon.png" class="responsive-img"></a>
-                  <a href=""><img src="images/BlueArrow.png" class="responsive-img downarrow"></a>
+                  <a href="#!"><img src="images/Setting_Icon.png" class="responsive-img"></a>
+                  <a href="#!"><img src="images/BlueArrow.png" class="responsive-img downarrow"></a>
 
 
                 </div>
@@ -325,10 +360,10 @@
               <div class="row">
                 <div class="col s8 m8">
                   <div class="col s5 m5">
-                    <input type="text" placeholder="text" class="success-border" />
+                    <input type="text" placeholder="text" class="" />
                   </div>
                   <div class="col s7 m7">
-                    <span class="validation-success"></span>
+                    <!--<span class="validation-success"></span>-->
                   </div>
                 </div>
 
@@ -337,8 +372,8 @@
           </div>
           <div class="col s1 m1">
             <div class="row-flex">
-              <a href=""><img src="images/upwards.png" class="responsive-img" /></a>
-              <a href=""><img src="images/downwards.png" class="responsive-img" /></a>
+              <a href="#!"><img src="images/upwards.png" class="responsive-img" /></a>
+              <a href="#!"><img src="images/downwards.png" class="responsive-img" /></a>
             </div>
           </div>
           <div class="col s11 m11">
@@ -347,8 +382,8 @@
                 <div class="col s10 m10 ptitle">Date:</div>
                 <div class="col s2 m2 right-align">
 
-                  <a href=""><img src="images/Setting_Icon.png" class="responsive-img"></a>
-                  <a href=""><img src="images/BlueArrow.png" class="responsive-img downarrow"></a>
+                  <a href="#!"><img src="images/Setting_Icon.png" class="responsive-img"></a>
+                  <a href="#!"><img src="images/BlueArrow.png" class="responsive-img downarrow"></a>
 
 
                 </div>
@@ -372,8 +407,8 @@
           </div>
           <div class="col s1 m1">
             <div class="row-flex">
-              <a href=""><img src="images/upwards.png" class="responsive-img" /></a>
-              <a href=""><img src="images/downwards.png" class="responsive-img" /></a>
+              <a href="#!"><img src="images/upwards.png" class="responsive-img" /></a>
+              <a href="#!"><img src="images/downwards.png" class="responsive-img" /></a>
             </div>
           </div>
           <div class="col s11 m11">
@@ -387,8 +422,8 @@
                 </div>
                 <div class="col s2 m2 right-align">
 
-                  <a href=""><img src="images/Setting_Icon.png" class="responsive-img"></a>
-                  <a href=""><img src="images/BlueArrow.png" class="responsive-img downarrow"></a>
+                  <a href="#!"><img src="images/Setting_Icon.png" class="responsive-img"></a>
+                  <a href="#!"><img src="images/BlueArrow.png" class="responsive-img downarrow"></a>
 
 
                 </div>
@@ -414,8 +449,8 @@
           </div>
           <div class="col s1 m1">
             <div class="row-flex">
-              <a href=""><img src="images/upwards.png" class="responsive-img" /></a>
-              <a href=""><img src="images/downwards.png" class="responsive-img" /></a>
+              <a href="#!"><img src="images/upwards.png" class="responsive-img" /></a>
+              <a href="#!"><img src="images/downwards.png" class="responsive-img" /></a>
             </div>
           </div>
           <div class="col s11 m11">
@@ -424,8 +459,8 @@
                 <span class="col s10 m10 ptitle">Height:</span>
                 <div class="col s2 m2 right-align">
 
-                  <a href=""><img src="images/Setting_Icon.png" class="responsive-img"></a>
-                  <a href=""><img src="images/BlueArrow.png" class="responsive-img downarrow"></a>
+                  <a href="#!"><img src="images/Setting_Icon.png" class="responsive-img"></a>
+                  <a href="#!"><img src="images/BlueArrow.png" class="responsive-img downarrow"></a>
 
 
                 </div>
@@ -439,8 +474,8 @@
           </div>
           <div class="col s1 m1">
             <div class="row-flex">
-              <a href=""><img src="images/upwards.png" class="responsive-img" /></a>
-              <a href=""><img src="images/downwards.png" class="responsive-img" /></a>
+              <a href="#!"><img src="images/upwards.png" class="responsive-img" /></a>
+              <a href="#!"><img src="images/downwards.png" class="responsive-img" /></a>
             </div>
           </div>
         </div>
@@ -467,6 +502,7 @@
 
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
   <script type="text/javascript" src="js/common.js"></script>
   <script type="text/javascript" src="js/moment.js"></script>

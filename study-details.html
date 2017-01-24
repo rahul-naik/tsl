@@ -283,6 +283,19 @@
           </div>
         </div>
       </div>
+      <div class=" validation-container bottom-margin">
+        <div class="col s12 m12">
+          <div>
+            <span class="validation-error">This is error message</span>
+          </div>
+          <div>
+            <span class="validation-success">This is success message</span>
+          </div>
+          <div>
+            <span class="validation-alert">This is alert message</span>
+          </div>
+        </div>
+      </div>
       <div class="row" id="wrapper">
         <div id="scroller">
           <div class="col s12 m12">
@@ -572,26 +585,26 @@
   <script type="text/javascript" src="js/bootstrap-material-datetimepicker.js"></script>
   <script>
 
-    var myScroll;
+      var myScroll;
 
 
-    myScroll = new IScroll('#wrapper', {
-      scrollbars: true,
-      mouseWheel: true,
-      interactiveScrollbars: true,
-      shrinkScrollbars: 'scale',
-      fadeScrollbars: true
-    });
+      myScroll = new IScroll('#wrapper', {
+        scrollbars: true,
+        mouseWheel: true,
+        interactiveScrollbars: true,
+        shrinkScrollbars: 'scale',
+        fadeScrollbars: true
+      });
 
 
-    $('.datepicker').bootstrapMaterialDatePicker({ time: false, format: 'DD/MM/YYYY' });
+      $('.datepicker').bootstrapMaterialDatePicker({ time: false, format: 'DD/MM/YYYY' });
     // $('.datepicker').pickadate({
     //   selectMonths: true, // Creates a dropdown to control month
     //   selectYears: 15 // Creates a dropdown of 15 years to control year
     // });
 
 
-  </script>
+    </script>
 </body>
 
 </html>
