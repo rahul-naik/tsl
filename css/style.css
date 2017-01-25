@@ -1412,6 +1412,10 @@ div.collapsible-body ul li a:hover{
 div.collapsible-body ul li a{
     color: #000;
 }
+.info_outline{
+    margin:5px 0 0 5px;
+    vertical-align: middle;
+}
 @media only screen and (max-width: 992px){
     nav .brand-logo{
      left: 0;
