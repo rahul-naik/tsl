@@ -697,7 +697,7 @@ div.select-wrapper input.select-dropdown {
     border-bottom: 1px solid #b4bfc5;
     box-shadow: none;
 }
-.modal-content .row {
+.bottom-space .row {
     margin-bottom: 25px !important;
 }
 .role-table thead th {
@@ -1375,12 +1375,43 @@ ul.table-dropdown.dropdown-content {
 }
 
 .modal{
-    max-height: 100%;
+    max-height: 85%;
 }
 .section-title{
     font-size: 12px;
 }
 
+div.collapsible-body{
+    padding:20px;
+    background: #FFF;
+}
+
+div.collapsible-body ul li {
+    border-bottom: 1px solid #ddd;
+    padding:10px 0;
+    font-size: 14px;
+}
+div.collapsible-body ul li:last-child {
+    border-bottom: none;
+    padding:10px 0;
+}
+div.collapsible-header{
+        font-size: 16px;
+    font-weight: 500;
+    background: #fff url('../images/BlueArrow.png') no-repeat 98% center;
+}
+div.collapsible-header.active{
+        font-size: 16px;
+    font-weight: 500;
+    background: #FFF url('../images/BlueArrowLeft.png') no-repeat 98% center;
+}
+
+div.collapsible-body ul li a:hover{
+    background: transparent;
+}
+div.collapsible-body ul li a{
+    color: #000;
+}
 @media only screen and (max-width: 992px){
     nav .brand-logo{
      left: 0;

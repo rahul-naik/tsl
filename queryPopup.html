@@ -238,7 +238,7 @@
             <span class="activity-current">Status:  Draft</span>
           </div>
           <div class="col s6 m6">
-            <a href="#" id="validationPopup"><span class="options-text bluemix">Add New Validation</span></a>
+            <a href="#" id="QueryPopup"><span class="options-text bluemix">Add New Query</span></a>
           </div>
         </div>
 
@@ -270,113 +270,186 @@
     </div>
   </div>
 </footer>
-<div id="addvalidation" class="modal">
+<div id="addQuery" class="modal">
   <a href="#!" class="modal-close closeBtn"><img src="images/close.png" alt=""></a>
-  <div class="modal-content  bottom-space">
-    <p class="user-details"><span class="left ">Add New Validation</span></p>
-    <div>
-      <div class="row">
-        <div class="col s12 m12">
-          <span class="section-title">Validation List :</span>
-        </div>
+  <div class="modal-content">
+    <p class="user-details"><span class="left ">Add New Query</span></p>
+
+    <div class="row">
+      <div class="col s2 m2">
+        <span class="section-title">CRF ID :</span>
+      </div>
+      <div class="col s2 m2">
+        <span class="section-title">1.6</span>
+      </div>
+      <div class="col s3 m3">
 
       </div>
-      <div class="row">
-        <div class="col m3 right-align">
-          <label class="input-label">Validation Name:</label>
+      <div class="col s4 m4 right-align">
+        <span class="section-title">Subject ID (Screening Number) :</span>
+      </div>
+      <div class="col s1 m1 right-align">
+        <span class="section-title">(P002)</span>
+      </div>
+      <div class="col s2 m2">
+        <span class="section-title">Visit :</span>
+      </div>
+      <div class="col s2 m2">
+        <span class="section-title">V1</span>
+      </div>
+      <div class="col s3 m3">
+
+      </div>
+      <div class="col s4 m4 right-align">
+        <span class="section-title">Section :</span>
+      </div>
+      <div class="col s1 m1 right-align">
+        <span class="section-title">S1</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card-panel pDetails">
+        <div class="row">
+          <div class="col s6 m6 ptitle">Weight:</div>
+          <div class="col s6 m6 right">
+            <div class="col s12 m12 right-align ">
+              <a href="#!" class="options-text bluemix ">Go to Question</a>
+            </div>
+
+
+          </div>
         </div>
-        <div class="col m4">
-          <input class="modal-input" type="text" />
+        <div class="row">
+          <div class="col s8 m8">
+            <div class="col s5 m5">
+              <input type="text" placeholder="text" class="" />
+            </div>
+
+          </div>
+
         </div>
       </div>
       <div class="row">
-        <div class="col m3 right-align">
-          <label class="input-label">Validation Type:</label>
-        </div>
-        <div class="col m4">
-                <select>
-                    <option value=""  selected>Main Dashboard</option>
-                    <option value="1">Query List</option>
-                    <option value="2">Option 2</option>
-                    <option value="3">Option 3</option>
-                  </select>
-        </div>
+
       </div>
-      <div class="row">
-        <div class="col m3 right-align">
-          <label class="input-label">Validation Message:</label>
+    </div>
+    <div class="row">
+      <div class="col s12 m12  bottom-margin">
+        <div class="row">
+          <div class="col s10 m10 section-title">Add Query Details:</div>
         </div>
-        <div class="col m4">
-        <textarea name="" id="" cols="30" rows="20"></textarea>
-        </div>
-      </div>
-      <div class="row test-study-options">
-        <div class="col m3 right-align">
-        
-        </div>
-        <div class="col m4">
-          <a class="waves-effect waves-light btn save-button left">Save</a>
+        <div class="row">
+          <div class="col s10 m10 checkbox-holder">
+            <textarea name="" id="" cols="30" rows="20"></textarea>
+
+          </div>
+
         </div>
       </div>
     </div>
-    <div>
-      <div class="row">
-        <div class="col s12 m12">
-          <span class="section-title">Select Validation terms / Expressions :</span>
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="row">
+          <div class="col m12">
+            <span class="section-title">Status</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col m12 bottom-margin">
+            <select>
+                <option value="1">Option1</option>
+                <option value="2" selected>Option2</option>
+                <option value="3">Option3</option>
+             </select>
+          </div>
         </div>
 
       </div>
-      <div class="row test-study-options">
-        <div class="col m6 right-align">
-         <a class="waves-effect waves-light btn save-button left">generate validation</a>
+
+      <div class="col s12 m6">
+        <div class="row">
+          <div class="col m12">
+            <span class="section-title">Assign To</span>
+          </div>
         </div>
-        <div class="col m4">
-      
-        </div>
-      </div>
-      
-    </div>
-      <div>
-      <div class="row">
-        <div class="col s12 m12">
-          <span class="section-title">Collect Following Questions :</span>
+        <div class="row">
+          <div class="col m12 bottom-margin">
+            <select>
+                <option value="1">Option1</option>
+                <option value="2" selected>Option2</option>
+                <option value="3">Option3</option>
+             </select>
+          </div>
         </div>
 
       </div>
-      <div class="row">
-        <div class="col m3 right-align">
-         <a class="waves-effect waves-light btn save-button left">add</a>
-        </div>
-        <div class="col m4">
-      
-        </div>
+      <div class="col s12 m6">
+        <a class="waves-effect waves-light btn save-button left">Save</a>
       </div>
-      
     </div>
-  
+    <div class="row">
+      <table class="bordered">
+        <thead>
+          <tr>
+            <th data-field="id">Name</th>
+            <th data-field="name">Issue Details</th>
+            <th data-field="price">Date</th>
+            <th data-field="price">Status</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Shibu D</td>
+            <td>Issue Details :	Test 1</td>
+            <td>22 Jul 2016 05:47:21</td>
+            <td  class="open-color">
+              open
+            </td>
+          </tr>
+          <tr>
+            <td>Shibu D</td>
+            <td>Issue Details :	Test 1</td>
+            <td>22 Jul 2016 05:47:21</td>
+            <td  class="open-color">
+              open
+            </td>
+          </tr>
+          <tr>
+            <td>Shibu D</td>
+            <td>Issue Details :	Test 1</td>
+            <td>22 Jul 2016 05:47:21</td>
+            <td  class="close-color">
+              close
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
   </div>
+</div>
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
 
-  <!--Import jQuery before materialize.js-->
-  <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-
-  <script type="text/javascript" src="js/common.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
-  <script>
-    function addValidationPopup() {
-      $('#addvalidation').modal();
-      $('#addvalidation').modal('open');
-    }
-    $(function () {
-      $('#template').on('click', function () {
-        $('#template-open').trigger('click');
-      });
-
-      $('#validationPopup').on('click', function (e) {
-        e.preventDefault();
-        addValidationPopup();
-      })
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script>
+  function addqueryPopup() {
+    $('#addQuery').modal();
+    $('#addQuery').modal('open');
+  }
+  $(function () {
+    $('#template').on('click', function () {
+      $('#template-open').trigger('click');
     });
-  </script>
+
+    $('#QueryPopup').on('click', function (e) {
+      e.preventDefault();
+      addqueryPopup();
+    })
+  });
+</script>
 </body>
 
 </html>
