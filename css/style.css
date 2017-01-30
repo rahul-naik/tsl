@@ -784,11 +784,11 @@ div.sub-wrapper i {
 
 .card-panel input.select-dropdown{margin:0}
 .study-visit{font-size:16px;font-weight: 500;}
-.square{height: 22px;width: 22px;border:1px solid #757575;font-size: 10px;text-align:center;color:#263238;margin: 0 12px;display: flex;}
+.square{height: 22px;width: 22px;border:1px solid #757575;font-size: 10px;text-align:center;color:#263238;margin:10px;display: flex;}
 .square a{color: #263238;display: inline-block;vertical-align: middle;align-self: center;width: 100%;}
 .square-holder{padding-top:20px;}
-.square-holder div:first-child{margin-left:0;}
-.square-holder div:last-child{margin-right:0;}
+/*.square-holder div:first-child{margin-left:0;}
+.square-holder div:last-child{margin-right:0;}*/
 .flex-container-column{
     display: -webkit-flex;
     display: -moz-flex;
@@ -1381,36 +1381,56 @@ ul.table-dropdown.dropdown-content {
     font-size: 12px;
 }
 
-div.collapsible-body{
+.collapsible-custom div.collapsible-body{
     padding:20px;
     background: #FFF;
 }
 
-div.collapsible-body ul li {
+.collapsible-custom div.collapsible-body ul li {
     border-bottom: 1px solid #ddd;
     padding:10px 0;
     font-size: 14px;
 }
-div.collapsible-body ul li:last-child {
+.collapsible-custom div.collapsible-body ul li:last-child {
     border-bottom: none;
     padding:10px 0;
 }
-div.collapsible-header{
+.collapsible-custom div.collapsible-header{
         font-size: 16px;
     font-weight: 500;
     background: #fff url('../images/BlueArrow.png') no-repeat 98% center;
 }
-div.collapsible-header.active{
+.collapsible-custom div.collapsible-header.active{
         font-size: 16px;
     font-weight: 500;
     background: #FFF url('../images/BlueArrowLeft.png') no-repeat 98% center;
 }
 
-div.collapsible-body ul li a:hover{
+.collapsible-custom div.collapsible-body ul li a:hover{
     background: transparent;
 }
-div.collapsible-body ul li a{
+.collapsible-custom div.collapsible-body ul li a{
     color: #000;
+}
+
+.grid-questions input[type="text"]{
+    margin:0 !important;
+    width:40%;
+}
+.w20{
+    width: 20%;
+}
+.w60{
+    width: 60%;
+}
+.full-bordered td{
+    border:1px solid #d0d0d0;
+}
+.divider{
+    min-height: 1px !important;
+}
+.drp-space{
+    margin-right: 20px;
 }
 .info_outline{
     margin:5px 0 0 5px;

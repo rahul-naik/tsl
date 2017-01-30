@@ -197,10 +197,23 @@
         <div class="col m12">
 
           <div class="card table-card">
-            <div class="valign-wrapper query-wrapper col m8">
+            <div class="valign-wrapper query-wrapper col m12">
+              <div class="col m8">
+                <i class="material-icons">search</i>
+                <input placeholder="Search by Study ID, Subject ID. Issue ID etc..." type="text" class="autocomplete" id="autocomplete">
+              </div>
+              <div class="col m2"></div>
+              <div class="col m2 right-align dropdown">
+               
+                  <a href="#!" role="button" data-toggle="dropdown" class="openDropDown dropdown-toggle"><img src="images/image-filter.png" class="" alt="" /></a>
+                  <ul id='' class="dropdown-menu multi-level dropdown-left" role="menu" aria-labelledby="dropdownMenu">
+                    <li><a href="#!">Active</a></li>
+                    <li><a href="#!">Inactive</a></li>
+                    <li><a href="#!">three</a></li>
+                  </ul>
+                
 
-              <i class="material-icons">search</i>
-              <input placeholder="Search by Study ID, Subject ID. Issue ID etc..." type="text" class="autocomplete" id="autocomplete">
+              </div>
 
 
             </div>
@@ -209,128 +222,128 @@
                 <tr>
                   <th data-field="id" class="">
                     <div class="vAlign"><span>Study ID</span> <i class="material-icons">arrow_drop_down</i></div>
-          </div>
-          </th>
-          <th data-field="name" class="">
-            <div class="vAlign"><span>Subject ID</span> <i class="material-icons">arrow_drop_down</i></div>
-          </th>
-          <th data-field="price" class="">
-            <div class="vAlign"><span>Issue ID</span> <i class="material-icons">arrow_drop_down</i></div>
-          </th>
-          <th data-field="price" class="">
-            <div class="vAlign"><span>Comments</span> <i class="material-icons">arrow_drop_down</i></div>
-          </th>
-          <th data-field="price" class="">
-            <div class="vAlign"><span>Status</span> <i class="material-icons">arrow_drop_down</i></div>
-          </th>
-          <th data-field="price" class="">
-            <div class="vAlign"><span>Date</span> <i class="material-icons">arrow_drop_down</i></div>
-          </th>
-          <th data-field="price" class="">
-            <div class="vAlign"><span>Issue Days</span> <i class="material-icons">arrow_drop_down</i></div>
-          </th>
-          <th data-field="price" class="">
-            <div class="vAlign"><span>Assign To</span> <i class="material-icons">arrow_drop_down</i></div>
-          </th>
-          <th data-field="price" class="">
-            <div class="vAlign"><span>Action</span> <i class="material-icons">arrow_drop_down</i></div>
-          </th>
-          </tr>
-          </thead>
 
-          <tbody>
-            <tr>
-              <td>Demo 1.6</td>
-              <td>V001</td>
-              <td>11060</td>
-              <td>BP should not be more than 120</td>
-              <td class="open-color">Open</td>
-              <td>10 Nov 2016</td>
-              <td>9</td>
-              <td>Shibu D</td>
-              <td><img src="images/EditIcon.png" class="responsive-img" /></td>
-            </tr>
-            <tr>
-              <td>Demo 1.6</td>
-              <td>V001</td>
-              <td>11060</td>
-              <td>BP should not be more than 120</td>
-              <td class="open-color">Open</td>
-              <td>10 Nov 2016</td>
-              <td>9</td>
-              <td>Shibu D</td>
-              <td><img src="images/EditIcon.png" class="responsive-img" /></td>
-            </tr>
-            <tr>
-              <td>Demo 1.6</td>
-              <td>V001</td>
-              <td>11060</td>
-              <td>BP should not be more than 120</td>
-              <td class="open-color">Open</td>
-              <td>10 Nov 2016</td>
-              <td>9</td>
-              <td>Shibu D</td>
-              <td><img src="images/EditIcon.png" class="responsive-img" /></td>
-            </tr>
-            <tr>
-              <td>Demo 1.6</td>
-              <td>V001</td>
-              <td>11060</td>
-              <td>BP should not be more than 120</td>
-              <td class="open-color">Open</td>
-              <td>10 Nov 2016</td>
-              <td>9</td>
-              <td>Shibu D</td>
-              <td><img src="images/EditIcon.png" class="responsive-img" /></td>
-            </tr>
-            <tr>
-              <td>Demo 1.6</td>
-              <td>V001</td>
-              <td>11060</td>
-              <td>BP should not be more than 120</td>
-              <td class="open-color">Open</td>
-              <td>10 Nov 2016</td>
-              <td>9</td>
-              <td>Shibu D</td>
-              <td><img src="images/EditIcon.png" class="responsive-img" /></td>
-            </tr>
-            <tr>
-              <td>Demo 1.6</td>
-              <td>V001</td>
-              <td>11060</td>
-              <td>BP should not be more than 120</td>
-              <td class="open-color"> Open</td>
-              <td>10 Nov 2016</td>
-              <td>9</td>
-              <td>Shibu D</td>
-              <td><img src="images/EditIcon.png" class="responsive-img" /></td>
-            </tr>
-            <tr>
-              <td>Demo 1.6</td>
-              <td>V001</td>
-              <td>11060</td>
-              <td>BP should not be more than 120</td>
-              <td class="open-color">Open</td>
-              <td>10 Nov 2016</td>
-              <td>9</td>
-              <td>Shibu D</td>
-              <td><img src="images/EditIcon.png" class="responsive-img" /></td>
-            </tr>
-          </tbody>
-          </table>
-          <div class="right-align pagination-div">
-            <span>1-5 of 100  &nbsp; </span>
-            <span class="arrows"><img src="images/left.png" alt=""></span>
-            <span class="arrows"><img src="images/right.png" alt=""></span>
+                  </th>
+                  <th data-field="name" class="">
+                    <div class="vAlign"><span>Subject ID</span> <i class="material-icons">arrow_drop_down</i></div>
+                  </th>
+                  <th data-field="price" class="">
+                    <div class="vAlign"><span>Issue ID</span> <i class="material-icons">arrow_drop_down</i></div>
+                  </th>
+                  <th data-field="price" class="">
+                    <div class="vAlign"><span>Comments</span> <i class="material-icons">arrow_drop_down</i></div>
+                  </th>
+                  <th data-field="price" class="">
+                    <div class="vAlign"><span>Status</span> <i class="material-icons">arrow_drop_down</i></div>
+                  </th>
+                  <th data-field="price" class="">
+                    <div class="vAlign"><span>Date</span> <i class="material-icons">arrow_drop_down</i></div>
+                  </th>
+                  <th data-field="price" class="">
+                    <div class="vAlign"><span>Issue Days</span> <i class="material-icons">arrow_drop_down</i></div>
+                  </th>
+                  <th data-field="price" class="">
+                    <div class="vAlign"><span>Assign To</span> <i class="material-icons">arrow_drop_down</i></div>
+                  </th>
+                  <th data-field="price" class="">
+                    <div class="vAlign"><span>Action</span> <i class="material-icons">arrow_drop_down</i></div>
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Demo 1.6</td>
+                  <td>V001</td>
+                  <td>11060</td>
+                  <td>BP should not be more than 120</td>
+                  <td class="open-color">Open</td>
+                  <td>10 Nov 2016</td>
+                  <td>9</td>
+                  <td>Shibu D</td>
+                  <td><img src="images/EditIcon.png" class="responsive-img" /></td>
+                </tr>
+                <tr>
+                  <td>Demo 1.6</td>
+                  <td>V001</td>
+                  <td>11060</td>
+                  <td>BP should not be more than 120</td>
+                  <td class="open-color">Open</td>
+                  <td>10 Nov 2016</td>
+                  <td>9</td>
+                  <td>Shibu D</td>
+                  <td><img src="images/EditIcon.png" class="responsive-img" /></td>
+                </tr>
+                <tr>
+                  <td>Demo 1.6</td>
+                  <td>V001</td>
+                  <td>11060</td>
+                  <td>BP should not be more than 120</td>
+                  <td class="open-color">Open</td>
+                  <td>10 Nov 2016</td>
+                  <td>9</td>
+                  <td>Shibu D</td>
+                  <td><img src="images/EditIcon.png" class="responsive-img" /></td>
+                </tr>
+                <tr>
+                  <td>Demo 1.6</td>
+                  <td>V001</td>
+                  <td>11060</td>
+                  <td>BP should not be more than 120</td>
+                  <td class="open-color">Open</td>
+                  <td>10 Nov 2016</td>
+                  <td>9</td>
+                  <td>Shibu D</td>
+                  <td><img src="images/EditIcon.png" class="responsive-img" /></td>
+                </tr>
+                <tr>
+                  <td>Demo 1.6</td>
+                  <td>V001</td>
+                  <td>11060</td>
+                  <td>BP should not be more than 120</td>
+                  <td class="open-color">Open</td>
+                  <td>10 Nov 2016</td>
+                  <td>9</td>
+                  <td>Shibu D</td>
+                  <td><img src="images/EditIcon.png" class="responsive-img" /></td>
+                </tr>
+                <tr>
+                  <td>Demo 1.6</td>
+                  <td>V001</td>
+                  <td>11060</td>
+                  <td>BP should not be more than 120</td>
+                  <td class="open-color"> Open</td>
+                  <td>10 Nov 2016</td>
+                  <td>9</td>
+                  <td>Shibu D</td>
+                  <td><img src="images/EditIcon.png" class="responsive-img" /></td>
+                </tr>
+                <tr>
+                  <td>Demo 1.6</td>
+                  <td>V001</td>
+                  <td>11060</td>
+                  <td>BP should not be more than 120</td>
+                  <td class="open-color">Open</td>
+                  <td>10 Nov 2016</td>
+                  <td>9</td>
+                  <td>Shibu D</td>
+                  <td><img src="images/EditIcon.png" class="responsive-img" /></td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="right-align pagination-div">
+              <span>1-5 of 100  &nbsp; </span>
+              <span class="arrows"><img src="images/left.png" alt=""></span>
+              <span class="arrows"><img src="images/right.png" alt=""></span>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div id="dummy"></div>
+    <div id="dummy"></div>
 
-  <!-- END LEFT SIDEBAR NAV-->
+    <!-- END LEFT SIDEBAR NAV-->
 
   </div>
 
@@ -346,23 +359,25 @@
 
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/jquery.autocomplete.js"></script>
- <script type="text/javascript" src="js/common.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script>
-  var countries = [
-    { value: 'Demo 1.6', data: 'AD' },
-    { value: 'Demo 1.7', data: 'AD' },
-    { value: 'Lorem Ipsum', data: 'ZZ' },
-    { value: 'ABCD', data: 'AD' }
+    var countries = [
+      { value: 'Demo 1.6', data: 'AD' },
+      { value: 'Demo 1.7', data: 'AD' },
+      { value: 'Lorem Ipsum', data: 'ZZ' },
+      { value: 'ABCD', data: 'AD' }
 
-  ];
+    ];
 
-  $(countries, {onSelect: function (suggestion) {
+    $(countries, {
+      onSelect: function (suggestion) {
 
-  }
-});  
-</script>
+      }
+    });  
+  </script>
 </body>
 
 </html>

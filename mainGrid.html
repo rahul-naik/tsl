@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+  <!--Import Google Icon Font-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" />
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+
+  <link type="text/css" rel="stylesheet" href="css/style.css" />
+
+  <link type="text/css" rel="stylesheet" href="css/bootstrap-material-datetimepicker.css" />
+  <!--<link type="text/css" rel="stylesheet" href="css/jquery.dataTables.min.css" />-->
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <div class="navbar-fixed">
+    <nav class=" lighten-custom" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo valign-wrapper"><img class="responsive-img" src="images/Logo.png" /></a>
+        <ul class="right">
+          <li class="head-nav"><a href="#" class="center-align header-icon waves-effect waves-block waves-light"><i class="material-icons">email</i>
+          <span class="bs-badge badge-absolute bg-red">2</span>
+          </a></li>
+          <li class="head-nav">
+            <a href="#" class="center-align header-icon waves-effect waves-block waves-light"><img class="responsive-img" src="images/Help_Icon.png"></a>
+          </li>
+
+          <li class="userDetails valign-wrapper">
+            <a href="#" class="left waves-effect waves-block waves-light admin-holder dropdown-button" data-beloworigin="true" data-activates='dropdown1'>
+              <img class="responsive-img left" src="images/User_Icon.png">
+              <div class="left user-data">
+                <span class="user-name">Shibu - Telsa </span>
+                <span class="user-role">Administrator</span>
+              </div>
+              <img class="right responsive-img dropImage" src="images/drop.png" />
+            </a>
+            <ul id='dropdown1' class='dropdown-content'>
+              <li class="space-drop">
+                <label class="drpdown-label">Profile View</label>
+                <div class="input-field col s12 dropdown-holder">
+                  <select>
+                  <option value="" selected>Investigator</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </select>
+                  <span class="notf">change value to switch profile</span>
+                </div>
+              </li>
+
+              <li class="space-drop">
+                <label class="drpdown-label">Dashboard View</label>
+                <div class="input-field col s12 dropdown-holder">
+                  <select>
+                  <option value=""  selected>Main Dashboard</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </select>
+                  <span class="notf">change value to switch dashboard</span>
+                </div>
+              </li>
+              <li><a class="settings_icon" href="#!">Settings</a></li>
+              <li><a class="release_note" href="#!">Release Note</a></li>
+              <li><a class="matrix" href="#!">User capablity Matrix</a></li>
+              <li><a class="sign-out" href="#!">Sign out</a></li>
+            </ul>
+          </li>
+        </ul>
+
+
+      </div>
+    </nav>
+  </div>
+
+  <div class="dummyDiv offset-top">
+
+  </div>
+  <div class="dummyDiv offset-breadcrumb">
+
+  </div>
+  <div class="container overflow-container flex-container">
+
+    <div id="left-sidebar-nav" class="left sidebar-not-collapsed">
+
+      <ul id="slide-out" class="side-bar side-nav leftside-navigation collapsible collapsible-accordion">
+
+        <li class="bold " id="colapseOnHover">
+          <a href="#" class="waves-effect valign-wrapper waves-cyan right-align"><img id="collapseSideBar" class="responsive-img" src="images/CollapseArrow.png" /></a>
+        </li>
+        <li class="bold  dashboard drpdn">
+          <a href="#" class="waves-effect waves-cyan "> Dashboard</a>
+        </li>
+        <li class="bold  study drpdn">
+
+
+          <a href="#" class="collapsible-header waves-effect waves-cyan "> Study Users & Preferences</a>
+          <div class="collapsible-body">
+            <ul>
+              <li><a href="#!">Roles</a></li>
+              <li><a href="#!">Users</a></li>
+              <li><a href="#!">Units</a></li>
+              <li><a href="#!">Location</a></li>
+              <li><a href="#!">Study types</a></li>
+              <li><a href="#!">Email template</a></li>
+              <li><a href="#!">Default settings</a></li>
+              <li><a href="#!">Password policy</a></li>
+            </ul>
+          </div>
+
+
+        </li>
+        <li class="bold  manage-study drpdn">
+
+          <a href="#" class="collapsible-header waves-effect waves-cyan "> Manage Studies</a>
+          <div class="collapsible-body">
+            <ul>
+              <li><a href="#!">Create Study</a></li>
+              <li><a href="#!">Study Design</a></li>
+              <li><a href="#!">Input data to study</a></li>
+            </ul>
+          </div>
+
+
+        </li>
+        <li class="bold  library drpdn">
+          <a href="#" class="waves-effect waves-cyan "> Library</a>
+        </li>
+        <li class="bold  query drpdn">
+          <a href="queryList.html" class="waves-effect waves-cyan "> Query List</a>
+        </li>
+        <li class="bold reports drpdn">
+          <a href="#" class="collapsible-header waves-effect waves-cyan "> Reports</a>
+          <div class="collapsible-body">
+            <ul class="collapsible collapsible-accordion">
+              <li class="drpdn active-drpdown">
+                <a href="#!" class="collapsible-header waves-effect waves-cyan second-lvl-dropdown">ODM Reports</a>
+                <div class="collapsible-body">
+                  <ul class="second-lvl-ul">
+                    <li><a href="#!">Raise Request</a></li>
+                    <li><a href="#!">Request List</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#!">SAS Reporting</a></li>
+              <li><a href="#!">Excel Reporting</a></li>
+              <li><a href="#!">Graphs</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+
+    <div class="main-container">
+      <div class="breadcrumb_holder">
+        <div class="col s12">
+          <a href="#!" class="breadcrumb link_visit">Dashboard</a>
+          <a href="#!" class="breadcrumb link_visit">Manage Study</a>
+          <a href="#!" class="breadcrumb">Create New CRF</a>
+        </div>
+      </div>
+
+      <div class="row section-header">
+        <div class="col m6">
+          <div class="left dashboard-text">Create New CRF</div>
+        </div>
+        <div class="col m6">
+
+          <div class="right">
+            <a href="#" class="button-collapse dropdown-button" data-alignment="right" data-beloworigin="true" data-activates='dropdown2'><img src="images/Hamburger_Icon.png" class="responsive-img" /></a>
+            <ul id='dropdown2' class='dropdown-content'>
+              <li><a href="#!" class="Create_study">Create Study</a></li>
+              <li><a href="#!" class="manage_study">Manage Study</a></li>
+              <li><a href="#!" class="study_design">Study Design</a></li>
+              <li><a href="#!" class="monitor_data">Monitor / Input Data</a></li>
+              <li><a href="#!" class="manage_user">Manage User</a></li>
+              <li><a href="#!" class="view_list">View Query List</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- main Breadcrumb-->
+      <div class="bredcrumb-nav">
+        <ul class="steps steps-5">
+          <li class="current">
+            <a href="#" title="" class="flex-container">
+              <div class="count">
+                1
+              </div>
+              <div class="breadcrumb-title">
+                Main Details
+              </div>
+            </a>
+          </li>
+          <li class="">
+            <a href="#" title="" class="flex-container">
+              <div class="count">
+                2
+              </div>
+              <div class="breadcrumb-title">
+                Design Visits
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" title="" class="flex-container">
+              <div class="count">
+                3
+              </div>
+              <div class="breadcrumb-title">
+                Add Study Logs
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" title="" class="flex-container">
+              <div class="count">
+                4
+              </div>
+              <div class="breadcrumb-title">
+                Add Validations
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!--   Icon Section   -->
+      <div class="row content-subheader">
+        <div class="col s6 m6">
+          <span class="activity-current">Status:  Draft</span>
+        </div>
+
+        <div class="col s6 m6 right-align sub-wrapper">
+          <a class="waves-effect waves-light btn reset-button btnMargin">Preview</a>
+          <a class="waves-effect waves-light btn save-button btnMargin">Save Draft</a>
+          <a class="waves-effect waves-light btn save-button">Save & Next</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m12">
+          <div class="card-panel pDetails select-control-group">
+            <div class="row">
+              <div class="col s6 m6 ptitle">Grid Questions:</div>
+              <div class="col s6 m6 right">
+                <div class="col s12 m12  right-align ">
+                  <a href="#!" class="options-text bluemix ">Edit previous grid questions</a>
+                </div>
+
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s1 m1">
+                  1
+              </div>
+              <div class="col s11 m11">
+                <table class="full-bordered grid-questions">
+                  <tbody>
+                    <tr>
+                      <td class="w20"><span>seq. No </span></td>
+                      <td class="w60">
+                        <input type="text" />
+                      </td>
+                      <td class="w20">
+                        <div class="dropdown">
+                          <a href="#!" role="button" data-toggle="dropdown" class="openDropDown dropdown-toggle"><img src="images/Setting_Icon.png" class="responsive-img" /><img src="images/BlueArrow.png" class="responsive-img downarrow"
+                            /></a>
+                          <ul id='' class="dropdown-menu multi-level" role="menu">
+                            <li><a href="#!">one</a></li>
+                            <li><a href="#!">two</a></li>
+                            <li><a href="#!">three</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="w20"><span>Date </span></td>
+                      <td class="w60">
+                        <input type="text" placeholder="MM/DD/YYYY" class="datepicker left" id="date" />
+                        <img src="images/DatePicker.png" class="" alt="">
+                      </td>
+                      <td class="w20">
+                        <div class="dropdown">
+                          <a href="#!" role="button" data-toggle="dropdown" class="openDropDown dropdown-toggle"><img src="images/Setting_Icon.png" class="responsive-img" /><img src="images/BlueArrow.png" class="responsive-img downarrow"
+                            /></a>
+                          <ul id='' class="dropdown-menu multi-level" role="menu">
+                            <li><a href="#!">one</a></li>
+                            <li><a href="#!">two</a></li>
+                            <li><a href="#!">three</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="w20"><span>Gender </span></td>
+                      <td class="w60">
+                        <div class="col s3 m3">
+                          <input class="with-gap" name="Gender" type="radio" id="male" />
+                          <label for="male" class="checkbox-labels">Male</label>
+                        </div>
+                        <div class="col s3 m3 ">
+                          <input class="with-gap" name="Gender" type="radio" id="female" />
+                          <label for="female" class="checkbox-labels">Female</label>
+
+                        </div>
+                      </td>
+                      <td class="w20">
+                        <div class="dropdown">
+                          <a href="#!" role="button" data-toggle="dropdown" class="openDropDown dropdown-toggle"><img src="images/Setting_Icon.png" class="responsive-img" /><img src="images/BlueArrow.png" class="responsive-img downarrow"
+                            /></a>
+                          <ul id='' class="dropdown-menu multi-level" role="menu">
+                            <li><a href="#!">one</a></li>
+                            <li><a href="#!">two</a></li>
+                            <li><a href="#!">three</a></li>
+                          </ul>
+                        </div>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="w20"><span>Checkbox </span></td>
+                      <td class="w60">
+                        <div class="col s12 m12 checkbox-holder">
+                          <div>
+                            <input type="checkbox" class="filled-in" id="a1" checked="checked" />
+                            <label class="checkbox-labels" for="a1">Lorem ipsum dolor sit amet, consectetur adipiscing elit</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" class="filled-in" id="a2" checked="checked" />
+                            <label class="checkbox-labels" for="a2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" class="filled-in" id="a3" checked="checked" />
+                            <label class="checkbox-labels" for="a3">Lorem ipsum dolor sit amet, consectetur adipiscing elit</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" class="filled-in" id="a4" checked="checked" />
+                            <label class="checkbox-labels" for="a4">Lorem ipsum dolor sit amet, consectetur adipiscing elit</label>
+                          </div>
+
+                        </div>
+                      </td>
+                      <td class="w20">
+                        <div class="dropdown">
+                          <a href="#!" role="button" data-toggle="dropdown" class="openDropDown dropdown-toggle"><img src="images/Setting_Icon.png" class="responsive-img" /><img src="images/BlueArrow.png" class="responsive-img downarrow"
+                            /></a>
+                          <ul id='' class="dropdown-menu multi-level" role="menu">
+                            <li><a href="#!">one</a></li>
+                            <li><a href="#!">two</a></li>
+                            <li><a href="#!">three</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s1 m1">
+                  2
+              </div>
+              <div class="col s11 m11">
+                <table class="full-bordered grid-questions">
+                  <tbody>
+                    <tr>
+                      <td class="w20"><span>seq. No </span></td>
+                      <td class="w60">
+                        <input type="text" />
+                      </td>
+                      <td class="w20">
+                        <div class="dropdown">
+                          <a href="#!" role="button" data-toggle="dropdown" class="openDropDown dropdown-toggle"><img src="images/Setting_Icon.png" class="responsive-img" /><img src="images/BlueArrow.png" class="responsive-img downarrow"
+                            /></a>
+                          <ul id='' class="dropdown-menu multi-level" role="menu">
+                            <li><a href="#!">one</a></li>
+                            <li><a href="#!">two</a></li>
+                            <li><a href="#!">three</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="w20"><span>Date </span></td>
+                      <td class="w60">
+                        <input type="text" placeholder="MM/DD/YYYY" class="datepicker left" id="date" />
+                        <img src="images/DatePicker.png" class="" alt="">
+                      </td>
+                      <td class="w20">
+                        <div class="dropdown">
+                          <a href="#!" role="button" data-toggle="dropdown" class="openDropDown dropdown-toggle"><img src="images/Setting_Icon.png" class="responsive-img" /><img src="images/BlueArrow.png" class="responsive-img downarrow"
+                            /></a>
+                          <ul id='' class="dropdown-menu multi-level" role="menu">
+                            <li><a href="#!">one</a></li>
+                            <li><a href="#!">two</a></li>
+                            <li><a href="#!">three</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="w20"><span>Gender </span></td>
+                      <td class="w60">
+                        <div class="col s3 m3">
+                          <input class="with-gap" name="Gender" type="radio" id="male" />
+                          <label for="male" class="checkbox-labels">Male</label>
+                        </div>
+                        <div class="col s3 m3 ">
+                          <input class="with-gap" name="Gender" type="radio" id="female" />
+                          <label for="female" class="checkbox-labels">Female</label>
+
+                        </div>
+                      </td>
+                      <td class="w20">
+                        <div class="dropdown">
+                          <a href="#!" role="button" data-toggle="dropdown" class="openDropDown dropdown-toggle"><img src="images/Setting_Icon.png" class="responsive-img" /><img src="images/BlueArrow.png" class="responsive-img downarrow"
+                            /></a>
+                          <ul id='' class="dropdown-menu multi-level" role="menu">
+                            <li><a href="#!">one</a></li>
+                            <li><a href="#!">two</a></li>
+                            <li><a href="#!">three</a></li>
+                          </ul>
+                        </div>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="w20"><span>Checkbox </span></td>
+                      <td class="w60">
+                        <div class="col s12 m12 checkbox-holder">
+                          <div>
+                            <input type="checkbox" class="filled-in" id="a1" checked="checked" />
+                            <label class="checkbox-labels" for="a1">Lorem ipsum dolor sit amet, consectetur adipiscing elit</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" class="filled-in" id="a2" checked="checked" />
+                            <label class="checkbox-labels" for="a2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" class="filled-in" id="a3" checked="checked" />
+                            <label class="checkbox-labels" for="a3">Lorem ipsum dolor sit amet, consectetur adipiscing elit</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" class="filled-in" id="a4" checked="checked" />
+                            <label class="checkbox-labels" for="a4">Lorem ipsum dolor sit amet, consectetur adipiscing elit</label>
+                          </div>
+
+                        </div>
+                      </td>
+                      <td class="w20">
+                        <div class="dropdown">
+                          <a href="#!" role="button" data-toggle="dropdown" class="openDropDown dropdown-toggle"><img src="images/Setting_Icon.png" class="responsive-img" /><img src="images/BlueArrow.png" class="responsive-img downarrow"
+                            /></a>
+                          <ul id='' class="dropdown-menu multi-level" role="menu">
+                            <li><a href="#!">one</a></li>
+                            <li><a href="#!">two</a></li>
+                            <li><a href="#!">three</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="dummy"></div>
+    <input style="display:none" type="file" id="template-open"/>
+<!-- END LEFT SIDEBAR NAV-->
+
+</div>
+
+<footer class="page-footer">
+  <div class="footer-copyright">
+    <div class="container">
+      &copy; 2016 Clindox. Build Version 1.6
+
+    </div>
+  </div>
+</footer>
+<div id="addHeader" class="modal">
+  <a href="#!" class="modal-close closeBtn"><img src="images/close.png" alt=""></a>
+
+  <div class="modal-content">
+    <!--Placeholder for the popup content -->
+    <p class="user-details"><span class="left ">Create Header Content</span></p>
+    <img src="images/Picture1.png" class="responsive-img" alt="">
+    <a class="waves-effect waves-light btn save-button left">Save</a>
+  </div>
+  <div class="modal-footer ">
+
+  </div>
+</div>
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/moment.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-material-datetimepicker.js"></script>
+<script>
+  $('.datepicker').bootstrapMaterialDatePicker({ time: false, format: 'DD/MM/YYYY' });
+</script>
+</body>
+
+</html>
