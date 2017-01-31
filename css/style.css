@@ -1049,7 +1049,7 @@ div.export-options{
     input{
             padding-left: 10px !important;
     }
-    input[type=text]:focus:not([readonly]){
+    input[type=text]:focus:not([readonly]),input[type=password]:focus:not([readonly]){
             border-bottom: 1px solid #96b7ea;
                 box-shadow:none !important;
     }
@@ -1351,7 +1351,7 @@ ul.table-dropdown.dropdown-content {
 }
 
 .btnMargin {
-    margin-right:10px;
+    margin-right:10px !important;
 }
 .custom-card{
     transition: box-shadow .25s;
