@@ -1437,6 +1437,8 @@ ul.table-dropdown.dropdown-content {
     vertical-align: middle;
 }
 .imgBox{display: inline-flex;}
+.imgBoxPopup{margin:0 10px;}
+.justify-end{justify-content: flex-end;}
 @media only screen and (max-width: 992px){
     nav .brand-logo{
      left: 0;

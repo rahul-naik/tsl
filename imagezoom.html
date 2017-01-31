@@ -208,14 +208,47 @@
       </div>-->
       <div class="row">
         <div class="col m12">
-          <p></p>
+          <div class="card-panel pDetails">
+            <div class="row">
+              <div class="col s7 m7 ptitle">Weight:</div>
+              <div class="col s3 m3 ">
+                <div class="vAlign justify-end">
+                  <div class="imgBoxPopup">
+                    <img src="https://placeholdit.imgix.net/~text?txtsize=5&txt=30%C3%9730&w=30&h=30" data-origin="https://placeholdit.imgix.net/~text?txtsize=56&txt=600%C3%97600&w=600&h=600">
+                  </div>
+                  <div class="imgBoxPopup">
+                    <img src="https://placeholdit.imgix.net/~text?txtsize=5&txt=30%C3%9730&w=30&h=30" data-origin="https://placeholdit.imgix.net/~text?txtsize=56&txt=500%C3%97500&w=500&h=500">
+                  </div>
+                </div>
+
+              </div>
+              <div class="col s2 m2 right">
+                <div class="col s9 m9 right-border right-align ">
+                  <a href="#!" class="options-text bluemix ">Audit Trial</a>
+                </div>
+                <div class="col s3 m3">
+                  <img src="images/attachment.png" class="responsive-img" alt="">
+                </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s8 m8">
+                <div class="col s5 m5">
+                  <input type="text" placeholder="text" class="" />
+                </div>
+                <div class="col s7 m7">
+                  
+                </div>
+              </div>
+
+            </div>
+          </div>
         </div>
       </div>
       <div class="row">
         <div class="col m12">
-          <div class="imgBoxPopup">
-            <img src="https://placeholdit.imgix.net/~text?txtsize=28&txt=300%C3%97300&w=300&h=300" data-origin="https://placeholdit.imgix.net/~text?txtsize=56&txt=600%C3%97600&w=600&h=600">
-          </div>
+
         </div>
       </div>
 
@@ -242,9 +275,9 @@
 
     <div class="modal-content">
       <!--Placeholder for the popup content -->
-     
+
       <img src="" class="responsive-img" alt="">
-    
+
     </div>
     <div class="modal-footer ">
 
@@ -276,9 +309,9 @@
     // });
     $('.imgBoxPopup').on('click', function () {
       $('#imageViewer').modal();
-      
+
       var target = $(this).find('img').attr('data-origin');
-      $('#imageViewer .modal-content img').attr('src',target);
+      $('#imageViewer .modal-content img').attr('src', target);
       $('#imageViewer').modal('open');
     });
 
