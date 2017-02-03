@@ -559,6 +559,9 @@ input[type=text].autocomplete {
 .top-padding {
     padding-top: 40px;
 }
+.paddingTop20{
+    padding-top:20px; 
+}
 .sp-replacer {
     display: none !important;
 }
@@ -1444,6 +1447,29 @@ ul.table-dropdown.dropdown-content {
     padding-bottom:10px;
     font-size: 16px;
 }
+
+.tab-row-space {
+    padding-bottom:20px;
+    border-bottom: 2px solid #ececec;
+}
+
+.monitor-details{
+    padding:20px 0;
+    border-bottom:  1px solid #ececec;
+    overflow: hidden;
+}
+
+.monitor-details:last-child{
+    border-bottom: none;
+}
+div.col.monitor-wrapper{
+    padding:20px 0;
+    background: #f5f5f5;
+}
+.row-flex.spacing{
+    padding:10px 0;
+}
+
 @media only screen and (max-width: 992px){
     nav .brand-logo{
      left: 0;
