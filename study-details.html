@@ -198,7 +198,7 @@
         </div>
       </div>
 
-      <div class="row">
+      <div class="row" id="fixToheader">
         <div class="col s12 m12">
           <div class="card-panel pDetails">
             <div class="row test-study-options">
@@ -296,8 +296,8 @@
           </div>
         </div>
       </div>
-      <div class="row" id="wrapper">
-        <div id="scroller">
+      <div class="row">
+        
           <div class="col s12 m12">
             <div class="card-panel pDetails">
               <div class="row">
@@ -406,12 +406,12 @@
 
                   <a href="#!" role="button" data-toggle="dropdown" class="openDropDown dropdown-toggle"><img src="images/Setting_Icon.png" class="responsive-img" /><img src="images/BlueArrow.png" class="responsive-img downarrow"
                     /></a>
-                 
+
                   <ul id='' class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
-                      <li><a href="#!">one</a></li>
-                      <li><a href="#!">two</a></li>
-                      <li><a href="#!">three</a></li>
-                    </ul>
+                    <li><a href="#!">one</a></li>
+                    <li><a href="#!">two</a></li>
+                    <li><a href="#!">three</a></li>
+                  </ul>
 
                 </div>
               </div>
@@ -550,7 +550,7 @@
               </div>
             </div>
           </div>
-        </div>
+     
 
       </div>
 
@@ -583,15 +583,16 @@
   <script type="text/javascript" src="js/bootstrap-material-datetimepicker.js"></script>
   <script>
 
-    var myScroll;
+    var wrap = $(window);
 
+    wrap.on("scroll", function (e) {
 
-    myScroll = new IScroll('#wrapper', {
-      scrollbars: true,
-      mouseWheel: true,
-      interactiveScrollbars: true,
-      shrinkScrollbars: 'scale',
-      fadeScrollbars: true
+      if ($(window).scrollTop() > 160) {
+        $('#fixToheader').addClass("fix-search");
+      } else {
+        $('#fixToheader').removeClass("fix-search");
+      }
+
     });
 
 
