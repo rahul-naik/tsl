@@ -486,13 +486,13 @@ div.selected-export {
     border: 1px solid #b4bfc5;
     padding-left: 10px;
 }
-div.query-wrapper i {
+/*div.query-wrapper i {
     position: absolute;
     top: 22px;
     left: 18px;
     cursor: pointer;
     color: #5494ff;
-}
+}*/
 .query-wrapper input {
     background: #FFF;
 }
@@ -525,7 +525,7 @@ input[type=text].autocomplete:focus {
     border-bottom: 1px solid #9e9e9e;
 }
 input[type=text].autocomplete {
-    padding-left: 34px !important;
+    /*padding-left: 34px !important;*/
 }
 [type="checkbox"].filled-in:checked+label:after,
 [type="radio"].with-gap:checked+label:after {
@@ -1621,6 +1621,14 @@ span[data-popover]:hover div{
 
 .fix-search + div {
     padding-top:150px;
+}
+
+.search_icon{
+     position: absolute;
+    top: 16px;
+    right: -22px;
+    cursor: pointer;
+    color: #5494ff;
 }
 @media only screen and (max-width: 992px){
     nav .brand-logo{
