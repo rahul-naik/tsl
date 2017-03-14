@@ -29,7 +29,7 @@
           </li>
 
           <li class="userDetails valign-wrapper">
-            <a href="#" class="left waves-effect waves-block waves-light admin-holder dropdown-button" data-beloworigin="true" data-activates='dropdown1'>
+            <a href="#" class="left waves-effect waves-block waves-light admin-holder dropdown-button" id="openDropdown">
               <img class="responsive-img left" src="images/User_Icon.png">
               <div class="left user-data">
                 <span class="user-name">Shibu - Telsa </span>
@@ -554,7 +554,17 @@
     //     }
     //   });
     // });
-
+	
+	
+	 $("#openDropdown").click(function(){
+            $("#dropdown1").slideToggle("fast");
+        });
+	$(document).on("click", function(event){
+        var $trigger = $("#openDropdown");
+        if($trigger !== event.target && !$trigger.has(event.target).length){
+            $("#dropdown1").slideUp("fast");
+        }            
+    });
   </script>
 </body>
 
