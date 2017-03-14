@@ -413,6 +413,9 @@ footer {
 }
 #dropdown1 {
     width: 225px !important;
+	position:absolute;
+	top:100%;
+	opacity:1;
 }
 .dropdown-holder {
     width: 160px;
